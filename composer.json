@@ -19,15 +19,17 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~2.3",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
-        "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
     	"doctrine/doctrine-fixtures-bundle": "~2.2",
-	"twitter/bootstrap": "3.*",
+	    "twitter/bootstrap": "3.3.*@dev",
         "components/jquery": "1.11.*",
         "egeloen/ckeditor-bundle": "3.0.1",
         "egeloen/json-builder": "~2.0",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "coresphere/console-bundle": "dev-master"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "~2.3"
     },
     "scripts": {
         "post-install-cmd": [

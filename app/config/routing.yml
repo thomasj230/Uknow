@@ -1,3 +1,12 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+uknow_evolution:
+    resource: "@UknowEvolutionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+uknow_platform:
+    resource: "@UknowPlatformBundle/Resources/config/routing.yml"
+    prefix:   /
+
+uknow_utilisateur:
+    resource: "@UknowUtilisateurBundle/Resources/config/routing.yml"
+    prefix:   /
+

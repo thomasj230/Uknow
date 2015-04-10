@@ -1,0 +1,56 @@
+{# src/Uknow/PlatformBundle/Resources/views/layout.html.twig#}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        {% stylesheets
+        '@bootstrap_css'
+        '@UknowPlatformBundle/Resources/public/css/layout.css'
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+        {% endstylesheets %}
+        <title>{% block title %}Uknow{% endblock %}</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row">
+                <div class="col-xs-offset-1 col-xs-2">
+                    {{ include('UknowPlatformBundle:header:title.html.twig') }}
+                </div>
+                <nav class="col-xs-offset-1 col-xs-4">
+                    {{ render(controller('UknowPlatformBundle:Home:nav')) }}
+                </nav>
+                <div class="col-xs-offset-1 col-xs-3">
+                    {{ render(controller('UknowPlatformBundle:Home:profil')) }}
+                </div>
+            </header>
+
+            <div class="row">
+                <section class="board">
+                    <div>
+
+                    </div>
+                    <footer>
+
+                  </footer>
+                </section>
+
+                <section class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        {% javascripts
+        '@jquery'
+        '@bootstrap_js'
+        %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    </body>
+</html>

@@ -1,0 +1,3 @@
+uknow_evolution_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UknowEvolutionBundle:Default:index }

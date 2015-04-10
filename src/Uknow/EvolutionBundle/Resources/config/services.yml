@@ -1,0 +1,4 @@
+services:
+#    uknow_evolution.example:
+#        class: Uknow\EvolutionBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
