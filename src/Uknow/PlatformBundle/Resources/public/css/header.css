@@ -23,7 +23,8 @@ header
 }
 
 .nav .col-xs-4,
-header .col-xs-3
+header .col-xs-3,
+.profil .col-xs-6
 {
     padding: 0;
 }
@@ -61,37 +62,25 @@ header .col-xs-3
     background-color: #E8F3FE;
 }
 
-.profil div:hover a
-{
-    color: #065DB0;
-}
-
-.profil div:hover
-{
-    cursor: pointer;
-    background-color: white
-}
-
 .nav .dropdown-menu
 {
     border-radius: 0;
     margin: 0;
 }
 
-.profil a
+.profil button
 {
     color: white;
     font-size: 1.5em;
     text-decoration: none;
-}
-
-.profil
-{
+    background-color: #065DB0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 100%;
     text-align: center;
-}
-
-.profil div
-{
+    outline: none;
     transition-property: background-color, color;
     transition-duration: 400ms;
     -moz-transition-property: background-color, color;
@@ -100,6 +89,12 @@ header .col-xs-3
     -webkit-transition-duration: 400ms;
     -o-transition-property: background-color, color;
     -o-transition-duration: 400ms;
+}
+
+.profil button:hover
+{
+    color: #065DB0;
+    background-color: white
 }
 
 .board

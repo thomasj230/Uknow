@@ -3,10 +3,10 @@
 {% else %}
     <div class="profil">
         <div class="col-xs-6">
-            <a href="{{ path('fos_user_security_login') }}">>Connexion</a>
+            <button data-toggle="modal" data-backdrop="true" data-target="#Connexion">Connexion</button>
         </div>
         <div class="col-xs-6">
-            <a href="{{ path('fos_user_security_register') }}">>Inscription</a>
+            <button data-toggle="modal" data-backdrop="true" data-target="#Inscription">Inscription</button>
         </div>
     </div>
 {% endif %}
