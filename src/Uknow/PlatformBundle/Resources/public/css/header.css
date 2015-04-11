@@ -28,26 +28,48 @@ header .col-xs-3
     padding: 0;
 }
 
-.nav .dropdown-toggle
-{
+.nav .menu-pencil,
+.nav .menu-briefcase,
+.nav .menu-education {
     color: white;
+    line-height: 45px;
+    padding-top: 5px;
+}
+
+.nav .icon
+{
     font-size: 2em;
-    padding-top: 4px;
     text-align: center;
 }
 
-.nav .dropdown-toggle:hover,
+.nav .menu-pencil-down,
+.nav .menu-briefcase-down,
+.nav .menu-education-down
+{
+    display: none;
+    background-color: #E8F3FE;
+    position: fixed;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.nav .menu-pencil:hover,
+.nav .menu-briefcase:hover,
+.nav .menu-education:hover
+{
+    color: #065DB0;
+    background-color: #E8F3FE;
+}
+
 .profil div:hover a
 {
     color: #065DB0;
-    cursor: pointer;
 }
 
-.nav .dropdown-toggle:hover,
 .profil div:hover
 {
-    background-color: white;
     cursor: pointer;
+    background-color: white
 }
 
 .nav .dropdown-menu
@@ -68,7 +90,6 @@ header .col-xs-3
     text-align: center;
 }
 
-.nav .dropdown-toggle,
 .profil div
 {
     transition-property: background-color, color;

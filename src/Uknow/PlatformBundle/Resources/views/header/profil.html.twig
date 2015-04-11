@@ -1,8 +1,12 @@
-<div class="profil">
-    <div class="col-xs-6">
-        <a>Connexion</a>
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    Connecté en tant que {{ app.user.username }} - <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+{% else %}
+    <div class="profil">
+        <div class="col-xs-6">
+            <a href="{{ path('fos_user_security_login') }}">>Connexion</a>
+        </div>
+        <div class="col-xs-6">
+            <a href="{{ path('fos_user_security_register') }}">>Inscription</a>
+        </div>
     </div>
-    <div class="col-xs-6">
-        <a>Inscription</a>
-    </div>
-</div>
+{% endif %}
