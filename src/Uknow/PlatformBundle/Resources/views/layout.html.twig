@@ -7,6 +7,8 @@
         {% stylesheets
         '@bootstrap_css'
         '@UknowPlatformBundle/Resources/public/css/header.css'
+        '@UknowPlatformBundle/Resources/public/css/layout.css'
+        '@UknowPlatformBundle/Resources/public/css/board.css'
         %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
         {% endstylesheets %}
@@ -28,9 +30,7 @@
 
             <div class="row">
                 <section class="board">
-                    <div>
-
-                    </div>
+                    {{ render(controller('UknowPlatformBundle:Home:board')) }}
                     <footer>
 
                   </footer>
@@ -50,6 +50,7 @@
         '@jquery'
         '@bootstrap_js'
         '@UknowPlatformBundle/Resources/public/js/header.js'
+        '@UknowPlatformBundle/Resources/public/js/board.js'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}

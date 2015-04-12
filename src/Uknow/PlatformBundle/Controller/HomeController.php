@@ -20,4 +20,16 @@ class HomeController extends Controller
     {
         return $this->render('UknowPlatformBundle:header:profil.html.twig');
     }
+
+    public function boardAction()
+    {
+        $serviceListe = $this->container->get('uknow_platform.liste');
+        return $this->render('UknowPlatformBundle:board:board.html.twig', array(
+            'listDomaine' => $serviceListe->domaine(),
+            'listMatiere' => $serviceListe->matiere(),
+            'listTheme' => $serviceListe->theme(),
+            'listChapitre' => $serviceListe->chapitre(),
+            'listNiveau' => $serviceListe->niveau(),
+        ));
+    }
 }

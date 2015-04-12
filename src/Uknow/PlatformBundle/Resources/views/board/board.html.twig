@@ -1,0 +1,41 @@
+<div class="filtre">
+    <input class="recherche" placeholder="Un cours ou un exercice à rechercher ?">
+    <select class="domaine">
+        <option value>Choisir le domaine</option>
+        {% for domaine in listDomaine %}
+            <option value="{{ domaine.lien }}">{{ domaine.nom }}</option>
+        {% endfor %}
+    </select>
+    <select class="matiere">
+        <option value>Choisir la matiere</option>
+        {% for domaine in listMatiere|keys %}
+            <optgroup label={{ domaine }}>
+            {% for type in domaine %}
+                <option value="{{ type.lien }}">{{ type.nom }}</option>
+            {% endfor %}
+            </optgroup>
+        {% endfor %}
+    </select>
+    {#
+    <select class="theme">
+        <option value>Choisir le theme</option>
+        {% for theme in listTheme %}
+            <option value="{{ theme.lien }}">{{ theme.nom }}</option>
+        {% endfor %}
+    </select>
+    <select class="chapitre">
+        <option value>Choisir le chapitre</option>
+        {% for chapitre in listChapitre %}
+            <option value="{{ chapitre.lien }}">{{ chapitre.nom }}</option>
+        {% endfor %}
+    </select>
+    <select class="type">
+        <option value="volvo">Volvo</option>
+    </select>
+    <select class="niveau">
+        <option value>Choisir le niveau</option>
+        {% for niveau in listNiveau %}
+            <option value="{{ niveau.lien }}">{{ niveau.nom }}</option>
+        {% endfor %}
+    </select>#}
+</div>

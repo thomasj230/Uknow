@@ -1,0 +1,45 @@
+.recherche
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #065DB0;
+    outline: 0;
+    padding: 10px;
+    margin: 0;
+}
+
+.domaine,
+.matiere,
+.theme,
+.chapitre,
+.type,
+.niveau
+{
+    width: 100%;
+    height: 50px;
+    background-color: #065DB0;
+    border: 0;
+    outline: 0;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0;
+    transition-property: background-color, color;
+    transition-duration: 400ms;
+    -moz-transition-property: background-color, color;
+    -moz-transition-duration: 400ms;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 400ms;
+    -o-transition-property: background-color, color;
+    -o-transition-duration: 400ms;
+}
+
+.domaine:hover,
+.matiere:hover,
+.theme:hover,
+.chapitre:hover,
+.type:hover,
+.niveau:hover
+{
+    background-color: #afd9ee;
+    color: #006699;
+}

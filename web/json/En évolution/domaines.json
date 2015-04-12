@@ -1,0 +1,20 @@
+{
+  "domaine": [
+    {
+      "nom": "Littérature",
+      "lien": "litterature"
+    },
+    {
+      "nom": "Sciences",
+      "lien": "sciences"
+    },
+    {
+      "nom": "Art",
+      "lien": "art"
+    },
+    {
+      "nom": "Sport",
+      "lien": "sport"
+    }
+  ]
+}
