@@ -4,11 +4,13 @@ html, body
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 header
 {
-    background-color: #065DB0;
+    background-color: #133175;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -17,8 +19,8 @@ header
 
 .board
 {
-    background-color: #E8F3FE;
-    width: 250px;
+    background-color: #133175;
+    width: 200px;
     position: fixed;
     bottom: 0;
     left: 0;

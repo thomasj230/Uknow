@@ -3,13 +3,15 @@
  */
 
 $(function(){
+/*
     $('.board').mouseenter(function(){
         $('.board').animate({
             width: '500px'
         }, 'normal');
     }).mouseleave(function(){
         $('.board').animate({
-            width: '250px'
+            width: '200px'
         }, 'fast');
     });
+    */
 });

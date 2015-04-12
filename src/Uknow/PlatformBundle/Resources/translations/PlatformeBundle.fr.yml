@@ -1,5 +1,5 @@
 board:
-    search: Un cours ou un exercice à rechercher ?
+    search: Un cours à rechercher ?
     domain: Choisir un domaine
     subject: Choisir une matière
     theme: Choisir un thème

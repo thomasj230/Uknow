@@ -31,7 +31,7 @@ header .col-xs-3,
 .nav .menu-education-down
 {
     display: none;
-    background-color: #E8F3FE;
+    background-color: #3B5798;
     position: fixed;
     padding: 10px;
     list-style-type: none;
@@ -41,8 +41,7 @@ header .col-xs-3,
 .nav .menu-briefcase:hover,
 .nav .menu-education:hover
 {
-    color: #065DB0;
-    background-color: #E8F3FE;
+    background-color: #3B5798;
 }
 
 .nav .dropdown-menu
@@ -56,7 +55,7 @@ header .col-xs-3,
     color: white;
     font-size: 1.5em;
     text-decoration: none;
-    background-color: #065DB0;
+    background-color: #133175;
     border: 0;
     padding: 0;
     margin: 0;
@@ -64,20 +63,19 @@ header .col-xs-3,
     width: 100%;
     text-align: center;
     outline: none;
-    transition-property: background-color, color;
+    transition-property: background-color;
     transition-duration: 400ms;
-    -moz-transition-property: background-color, color;
+    -moz-transition-property: background-color;
     -moz-transition-duration: 400ms;
-    -webkit-transition-property: background-color, color;
+    -webkit-transition-property: background-color;
     -webkit-transition-duration: 400ms;
-    -o-transition-property: background-color, color;
+    -o-transition-property: background-color;
     -o-transition-duration: 400ms;
 }
 
 .profil button:hover
 {
-    color: #065DB0;
-    background-color: white
+    background-color: #3B5798;
 }
 
 
