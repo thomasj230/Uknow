@@ -25,8 +25,11 @@ class HomeController extends Controller
     {
         $json = file_get_contents('bundles/uknowplatform/json/structure.json');
         $jsonStructure = json_decode($json, true);
-        return $this->render('UknowPlatformBundle:board:board.html.twig', array(
+        $json = file_get_contents('bundles/uknowplatform/json/niveaux.json');
+        $jsonNiveaux = json_decode($json, true);
+        return $this->render('UknowPlatformBundle:board:board_structure.html.twig', array(
             'listStructure' => $jsonStructure,
+            'listNiveaux' => $jsonNiveaux
         ));
     }
 }

@@ -1,0 +1,51 @@
+{% extends  'UknowPlatformBundle:board:board.html.twig' %}
+
+{% trans_default_domain 'Structure' %}
+
+{% block domain %}
+    {% for domains in listStructure %}
+        <option value="{{ domains.domain }}">{{ domains.domain|trans }}</option>
+    {% endfor %}
+{% endblock domain %}
+
+{% block subject %}
+    {% for domains in listStructure %}
+        <optgroup label={{ domains.domain|trans }}>
+            {% for subjects in domains.subjects %}
+                <option value="{{ subjects }}">{{ subjects|trans }}</option>
+            {% endfor %}
+        </optgroup>
+    {% endfor %}
+{% endblock subject %}
+{#
+{% block theme %}
+    {% for domains in listStructure %}
+        <optgroup label={{ domains.domain|trans }}>
+            {% for subjects in domains.subjects %}
+                <optgroup label={{ subjects.subject|trans }}>
+                    {% for themes in subjects.themes %}
+                        <option value="{{ themes }}">{{ themes|trans }}</option>
+                    {% endfor %}
+                </optgroup>
+            {% endfor %}
+        </optgroup>
+    {% endfor %}
+{% endblock theme %}
+
+{% block chapter %}
+    {% for domains in listStructure %}
+        <optgroup label={{ domains.domain|trans }}>
+            {% for subjects in domains.subjects %}
+                <optgroup label={{ subjects.subject|trans }}>
+                    {% for themes in subjects.themes %}
+                        <optgroup label={{ themes.theme|trans }}>
+                            {% for chapters in themes.chapters %}
+                                <option value="{{ chapters }}">{{ chapters|trans }}</option>
+                            {% endfor %}
+                        </optgroup>
+                    {% endfor %}
+                </optgroup>
+            {% endfor %}
+        </optgroup>
+    {% endfor %}
+{% endblock chapter %}#}

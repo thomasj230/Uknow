@@ -1,1 +1,30 @@
+board:
+    search: Un cours ou un exercice à rechercher ?
+    domain: Choisir un domaine
+    subject: Choisir une matière
+    theme: Choisir un thème
+    chapter: Choisir un chapitre
+    type: Choisir un type
+    level: Choisir un niveau
+
+type:
+    course: Cours
+    exercise: Exercice
+
+level:
+    1: Sixième
+    2: Cinquième
+    3: Quatrième
+    4: Troisième
+    5: Seconde
+    6: Première
+    7: Terminale
+    8: Bac + 1
+    9: Bac + 2
+    10: Bac + 3
+    11: Bac + 4
+    12: Bac + 5
+    13: Bac + 6
+    14: Bac + 7
+    15: Bac + 8
 
