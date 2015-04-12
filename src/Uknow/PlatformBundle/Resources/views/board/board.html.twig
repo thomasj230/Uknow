@@ -1,22 +1,26 @@
+{% trans_default_domain 'Structure' %}
+
 <div class="filtre">
     <input class="recherche" placeholder="Un cours ou un exercice à rechercher ?">
+
     <select class="domaine">
         <option value>Choisir le domaine</option>
-        {% for domaine in listDomaine %}
-            <option value="{{ domaine.lien }}">{{ domaine.nom }}</option>
+        {% for domains in listStructure %}
+            <option value="{{ domains.domain }}">{{ domains.domain|trans }}</option>
         {% endfor %}
     </select>
+
     <select class="matiere">
         <option value>Choisir la matiere</option>
-        {% for domaine in listMatiere|keys %}
-            <optgroup label={{ domaine }}>
-            {% for type in domaine %}
-                <option value="{{ type.lien }}">{{ type.nom }}</option>
+        {% for domains in listStructure %}
+            <optgroup label={{ domains.domain|trans }}>
+            {% for subjects in domains.subjects %}
+                <option value="{{ subjects }}">{{ subjects|trans }}</option>
             {% endfor %}
             </optgroup>
         {% endfor %}
     </select>
-    {#
+{#
     <select class="theme">
         <option value>Choisir le theme</option>
         {% for theme in listTheme %}

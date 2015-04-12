@@ -23,13 +23,10 @@ class HomeController extends Controller
 
     public function boardAction()
     {
-        $serviceListe = $this->container->get('uknow_platform.liste');
+        $json = file_get_contents('bundles/uknowplatform/json/structure.json');
+        $jsonStructure = json_decode($json, true);
         return $this->render('UknowPlatformBundle:board:board.html.twig', array(
-            'listDomaine' => $serviceListe->domaine(),
-            'listMatiere' => $serviceListe->matiere(),
-            'listTheme' => $serviceListe->theme(),
-            'listChapitre' => $serviceListe->chapitre(),
-            'listNiveau' => $serviceListe->niveau(),
+            'listStructure' => $jsonStructure,
         ));
     }
 }
