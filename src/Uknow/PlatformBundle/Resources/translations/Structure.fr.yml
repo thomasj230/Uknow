@@ -4,17 +4,122 @@ D02: Sciences
 D01S01: Français
 D01S02: Allemand
 D01S03: Anglais
-D01S04: Education Civique
-D01S05: Espagnol
+D01S04: Espagnol
+D01S05: Histoire
 D01S06: Géographie
-D01S07: Histoire
+D01S07: Education Civique
 D01S08: Latin
 D01S09: Histoire des Arts
 
-D02S01: Mathématiques
-D02S02: Physique
-D02S03: Chimie
+D02S01: Chimie
+D02S02: Mathématiques
+D02S03: Physique
 D02S04: Sciences et Vie de la Terre
 D02S05: Technologie
 
+D01S01T01: Pratiquer
+D01S01T02: Vocabulaire
+D01S01T03: Orthographe
+D01S01T04: Grammaire
+D01S01T05: Conjugaison
 
+D01S02T01: Pratiquer
+D01S02T02: Vocabulaire
+D01S02T03: Orthographe
+D01S02T04: Grammaire
+D01S02T05: Conjugaison
+
+D01S03T01: Pratiquer
+D01S03T02: Vocabulaire
+D01S03T03: Orthographe
+D01S03T04: Grammaire
+D01S03T05: Conjugaison
+
+D01S04T01: Pratiquer
+D01S04T02: Vocabulaire
+D01S04T03: Orthographe
+D01S04T04: Grammaire
+D01S04T05: Conjugaison
+
+D01S05T01: L'Orient Ancien
+D01S05T02: La civilisation grecque
+D01S05T03: Rome
+D01S05T04: Les débuts du judaisme et du christianisme
+D01S05T05: Les empires chrétiens du haut Moyen Age
+D01S05T06: Regards sur des mondes lointains
+D01S05T07: Les débuts de l'islam
+D01S05T08: L'occident féodal, XIe - XVe siècle
+D01S05T09: Regards sur l'Afrique
+D01S05T10: Vers la modernité, fin XVe - XVIIe siècle
+D01S05T11: L'Europe et le monde au XVIIIe siècle
+D01S05T12: La révolution et l'empire
+D01S05T13: Le XIXe siècle
+D01S05T14: Un siècle de transformations scientifiques, technologiques, économiques et sociales
+D01S05T15: Guerres mondiales et régimes totalitaires (1914-1945)
+D01S05T16: Une géopolitique mondiale (depuis 1945)
+D01S05T17: La vie politique en France
+D01S05T18: Lecture historique
+
+D01S06T01: La Terre planète habitée
+D01S06T02: Humanité et développement durable
+D01S06T03: Approche de la mondialisation
+D01S06T04: La France et l'Europe dans le monde d'aujourd'hui
+
+D01S07T01: Collégien, enfant et habitat
+D01S07T02: Êtres humains, égalité et sécurité
+D01S07T03: Libertées, droit et sureté
+D01S07T04: Citoyenneté, démocratie et paix
+
+D01S08T01: Histoire de l'antiquité
+D01S08T02: Caractéristiques de la langue
+
+D01S09T01: Arts de l'espace
+D01S09T02: Arts du langage
+D01S09T03: Arts du quotidien
+D01S09T04: Arts du son
+D01S09T05: Arts du spectacle vivant
+D01S09T06: Arts du visuel
+
+D02S01T01: L'eau dans notre environnement - Mélanges et corps purs
+D02S01T02: De l'air qui nous entoure à la molécule
+D02S01T03: La chimie, science de la formation de la matière
+
+D02S02T01: Nombres et Calculs
+D02S02T02: Organisation et gestion de données, fonctions
+D02S02T03: Géométrie
+D02S02T04: Grandeurs et mesures
+
+D02S03T01: Les circuits électriques en courant continu - Etude qualitative
+D02S03T02: La lumière : sources et propagation rectiligne
+D02S03T03: Les lois du courant continu
+D02S03T04: La lumière : couleurs, images, vitesse
+D02S03T05: Energie électrique et circuits électriques en 'alternatif'
+D02S03T06: Les ondes
+D02S03T07: Mouvements
+D02S03T08: Forces
+D02S03T09: Energies
+D02S03T10: L'Univrs
+D02S03T11: Autres
+
+D02S04T01: Caractéristiques de l'environnement proche et répartition des êtres vivants
+D02S04T02: Le peuplement d'un milieu
+D02S04T03: Origine de la matière des êtres vivants
+D02S04T04: Des pratiques au service de l'alimentation humaines
+D02S04T05: Partie transversale: diversité, parentés et unité des êtres vivants
+D02S04T06: Fonctionnement de l'organisme et besoin en énergie
+D02S04T07: Géologie externe: évolution des paysages
+D02S04T08: Activité interne du globe terrestre
+D02S04T09: Reproduction sexuée
+D02S04T10: Transmission de la vie chez l'Homme
+D02S04T11: Relations au sein de l'organisme
+D02S04T12: Diversité et unité des êtres humains
+D02S04T13: Evolution des êtres vivants et histoire de la Terre
+D02S04T14: Risque infectieux et protection de l'organisme
+D02S04T15: Responsabilité humaine en matière de santé et d'environnement
+D02S04T16: La Terre dans l'Univers, la vie et l'évolution du vivant: une planète habitée
+D02S04T17: Enjeux planétaires contemporains: énergie, sol
+D02S04T18: Corps humain et santé: l'exercice physique
+
+D02S05T01: Analyse
+D02S05T02: Conception
+D02S05T03: Réalisation
