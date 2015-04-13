@@ -78,4 +78,11 @@ header .col-xs-3,
     background-color: #3B5798;
 }
 
+.profil,
+.profil a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 

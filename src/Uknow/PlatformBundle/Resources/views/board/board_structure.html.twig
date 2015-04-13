@@ -12,7 +12,7 @@
     {% for domains in listStructure %}
         <optgroup label={{ domains.domain|trans }}>
             {% for subjects in domains.subjects %}
-                <option value="{{ subjects }}">{{ subjects|trans }}</option>
+                <option value="{{ subjects.subject }}">{{ subjects.subject|trans }}</option>
             {% endfor %}
         </optgroup>
     {% endfor %}
@@ -24,7 +24,7 @@
             {% for subjects in domains.subjects %}
                 <optgroup label={{ subjects.subject|trans }}>
                     {% for themes in subjects.themes %}
-                        <option value="{{ themes }}">{{ themes|trans }}</option>
+                        <option value="{{ themes.theme }}">{{ themes.theme|trans }}</option>
                     {% endfor %}
                 </optgroup>
             {% endfor %}
@@ -32,7 +32,6 @@
     {% endfor %}
 {% endblock theme %}
 
-{#
 {% block chapter %}
     {% for domains in listStructure %}
         <optgroup label={{ domains.domain|trans }}>
@@ -49,4 +48,4 @@
             {% endfor %}
         </optgroup>
     {% endfor %}
-{% endblock chapter %}#}
+{% endblock chapter %}
