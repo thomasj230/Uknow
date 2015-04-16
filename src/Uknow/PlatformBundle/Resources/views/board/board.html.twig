@@ -29,12 +29,14 @@
 
     <button id="type" onclick="typeList()" value="none">{{ 'board.type'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="type-list">
+        <button class="choix" onclick="typeChoix('board.type', '{{ 'board.type'|trans }}')">{{ 'board.type'|trans }}</button>
         <button class="choix" onclick="typeChoix('type.course', '{{ 'type.course'|trans }}')">{{ 'type.course'|trans }}</button>
         <button class="choix" onclick="typeChoix('type.exercise', '{{ 'type.exercise'|trans }}')">{{ 'type.exercise'|trans }}</button>
     </div>
 
     <button id="niveau" onclick="niveauList()" value="none">{{ 'board.level'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="niveau-list">
+        <button class="choix" onclick="niveauChoix('{{ 'board.level' }}', '{{ 'board.level'|trans }}')">{{ 'board.level'|trans }}</button>
         {% for niveau in listNiveaux %}
             <button class="choix" onclick="niveauChoix('{{ niveau.level }}', '{{ niveau.level|trans }}')">{{ niveau.level|trans }}</button>
         {% endfor %}

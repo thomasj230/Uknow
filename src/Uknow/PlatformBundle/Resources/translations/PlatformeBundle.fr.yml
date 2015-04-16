@@ -1,11 +1,11 @@
 board:
     search: Un cours à rechercher ?
-    domain: Choisir un domaine
-    subject: Choisir une matière
-    theme: Choisir un thème
-    chapter: Choisir un chapitre
-    type: Choisir un type
-    level: Choisir un niveau
+    domain: Tous les domaines
+    subject: Toutes les matières
+    theme: Tous les thèmes
+    chapter: Tous les chapitres
+    type: Tous les types
+    level: Tous les niveaux
 
 type:
     course: Cours

@@ -154,3 +154,30 @@
 {
     background-color: #20418E;
 }
+
+footer
+{
+    background-color: #041948;
+    color: #3B5798;
+    text-align: center;
+    font-size: 0.8em;
+    height: 80px;
+    padding: 5px;
+    bottom:0;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 400ms;
+    -moz-transition-property: color;
+    -moz-transition-duration: 400ms;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 400ms;
+    -o-transition-property: color;
+    -o-transition-duration: 400ms;
+}
+
+footer a:hover
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}

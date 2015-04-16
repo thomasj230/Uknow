@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="130c6f9e-4f9c-46ce-a3d7-1abdfb49e8fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/PlatformeBundle.fr.yml" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/PlatformeBundle.fr.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/Structure.fr.yml" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/Structure.fr.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/board.css" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/board.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board.html.twig" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/js/board.js" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/js/board.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board_structure.html.twig" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board_structure.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/layout.css" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/header.css" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/header.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -38,8 +37,8 @@
             <file leaf-file-name="board.html.twig" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board.html.twig">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.021634616" vertical-offset="0" max-vertical-offset="864">
-                    <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <state vertical-scroll-proportion="0.6706731" vertical-offset="0" max-vertical-offset="900">
+                    <caret line="31" column="107" selection-start-line="31" selection-start-column="107" selection-end-line="31" selection-end-column="107" />
                     <folding />
                   </state>
                 </provider>
@@ -59,8 +58,18 @@
       <file leaf-file-name="Structure.fr.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/Structure.fr.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1944" max-vertical-offset="15570">
-              <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15678">
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlatformeBundle.fr.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/PlatformeBundle.fr.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -69,10 +78,12 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.333334" vertical-offset="90" max-vertical-offset="1206">
-              <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
+            <state vertical-scroll-proportion="-20.0" vertical-offset="90" max-vertical-offset="1242">
+              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#footer#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +92,8 @@
       <file leaf-file-name="board_structure.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board_structure.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.666666" vertical-offset="0" max-vertical-offset="900">
-              <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+            <state vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="972">
+              <caret line="35" column="123" selection-start-line="35" selection-start-column="123" selection-end-line="35" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -91,8 +102,8 @@
       <file leaf-file-name="board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/js/board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="2286">
-              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1689" max-vertical-offset="2610">
+              <caret line="136" column="92" selection-start-line="136" selection-start-column="92" selection-end-line="136" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -108,11 +119,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/header.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="1692">
+              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="board.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/board.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5802997" vertical-offset="1512" max-vertical-offset="2916">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.57601714" vertical-offset="2450" max-vertical-offset="3402">
+              <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -122,7 +143,7 @@
         <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/colors.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="33" />
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -169,18 +190,18 @@
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board_structure.css" />
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/json/niveaux.json" />
-        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/PlatformeBundle.fr.yml" />
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/colors.css" />
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/header/profil.html.twig" />
-        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/header.css" />
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/json/structure.json" />
-        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board_structure.html.twig" />
-        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board.html.twig" />
-        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/Structure.fr.yml" />
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/layout.css" />
-        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/board.css" />
+        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board_structure.html.twig" />
         <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/js/board.js" />
+        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/PlatformeBundle.fr.yml" />
+        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/Structure.fr.yml" />
+        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board.html.twig" />
+        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/header.css" />
+        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/board.css" />
       </list>
     </option>
   </component>
@@ -1169,20 +1190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/PlatformeBundle.fr.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7880086" vertical-offset="722" max-vertical-offset="1692">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/header/profil.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19845645" vertical-offset="0" max-vertical-offset="907">
@@ -1213,36 +1220,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.333334" vertical-offset="90" max-vertical-offset="1206">
-          <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/Structure.fr.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1944" max-vertical-offset="15570">
-          <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15678">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/colors.css">
+    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/js/board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1689" max-vertical-offset="2610">
+          <caret line="136" column="92" selection-start-line="136" selection-start-column="92" selection-end-line="136" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/translations/PlatformeBundle.fr.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6706731" vertical-offset="0" max-vertical-offset="900">
+          <caret line="31" column="107" selection-start-line="31" selection-start-column="107" selection-end-line="31" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board_structure.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.666666" vertical-offset="0" max-vertical-offset="900">
-          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+        <state vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="972">
+          <caret line="35" column="123" selection-start-line="35" selection-start-column="123" selection-end-line="35" selection-end-column="123" />
           <folding />
         </state>
       </provider>
@@ -1255,26 +1268,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/js/board.js">
+    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="2286">
-          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="1692">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/board/board.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.021634616" vertical-offset="0" max-vertical-offset="864">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="-20.0" vertical-offset="90" max-vertical-offset="1242">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#footer#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/colors.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Uknow/PlatformBundle/Resources/public/css/board.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5802997" vertical-offset="1512" max-vertical-offset="2916">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.57601714" vertical-offset="2450" max-vertical-offset="3402">
+          <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
           <folding />
         </state>
       </provider>
