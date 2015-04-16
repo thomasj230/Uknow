@@ -4,48 +4,42 @@
 
 {% block domain %}
     {% for domains in listStructure %}
-        <option value="{{ domains.domain }}">{{ domains.domain|trans }}</option>
+        <button class="choix" onclick="domaineChoix('{{ domains.domain }}', '{{ domains.domain|trans }}')">{{ domains.domain|trans }}</button>
     {% endfor %}
 {% endblock domain %}
 
 {% block subject %}
     {% for domains in listStructure %}
-        <optgroup label={{ domains.domain|trans }}>
-            {% for subjects in domains.subjects %}
-                <option value="{{ subjects.subject }}">{{ subjects.subject|trans }}</option>
-            {% endfor %}
-        </optgroup>
+        <div class="titre-group">{{ domains.domain|trans }}</div>
+        {% for subjects in domains.subjects %}
+        <button class="choix one" onclick="matiereChoix('{{ subjects.subject }}', '{{ subjects.subject|trans }}')">{{ subjects.subject|trans }}</button>
+        {% endfor %}
     {% endfor %}
 {% endblock subject %}
 
 {% block theme %}
     {% for domains in listStructure %}
-        <optgroup label={{ domains.domain|trans }}>
-            {% for subjects in domains.subjects %}
-                <optgroup label={{ subjects.subject|trans }}>
-                    {% for themes in subjects.themes %}
-                        <option value="{{ themes.theme }}">{{ themes.theme|trans }}</option>
-                    {% endfor %}
-                </optgroup>
+        <div class="titre-group">{{ domains.domain|trans }}</div>
+        {% for subjects in domains.subjects %}
+            <div class="titre-group one">{{ subjects.subject|trans }}</div>
+            {% for themes in subjects.themes %}
+                <button class="choix two" onclick="themeChoix('{{ themes.theme }}', '{{ themes.theme|trans }}')">{{ themes.theme|trans }}</button>
             {% endfor %}
-        </optgroup>
+        {% endfor %}
     {% endfor %}
 {% endblock theme %}
 
 {% block chapter %}
     {% for domains in listStructure %}
-        <optgroup label={{ domains.domain|trans }}>
-            {% for subjects in domains.subjects %}
-                <optgroup label={{ subjects.subject|trans }}>
-                    {% for themes in subjects.themes %}
-                        <optgroup label={{ themes.theme|trans }}>
-                            {% for chapters in themes.chapters %}
-                                <option value="{{ chapters }}">{{ chapters|trans }}</option>
-                            {% endfor %}
-                        </optgroup>
-                    {% endfor %}
-                </optgroup>
+        <div class="titre-group">{{ domains.domain|trans }}</div>
+        {% for subjects in domains.subjects %}
+            <div class="titre-group one">{{ subjects.subject|trans }}</div>
+            {% for themes in subjects.themes %}
+                <div class="titre-group two">{{ themes.theme|trans }}</div>
+                {% for chapters in themes.chapters %}
+                    <button class="choix three" onclick="chapitreChoix('{{ chapters }}', '{{ chapters|trans }}')">{{ chapters|trans }}</button>
+                {% endfor %}
             {% endfor %}
-        </optgroup>
+        {% endfor %}
     {% endfor %}
 {% endblock chapter %}

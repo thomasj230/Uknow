@@ -21,6 +21,7 @@ header
 {
     background-color: #133175;
     width: 200px;
+    height: calc(100% - 50px);
     position: fixed;
     bottom: 0;
     left: 0;

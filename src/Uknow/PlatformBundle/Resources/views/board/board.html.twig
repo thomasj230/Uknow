@@ -1,42 +1,42 @@
 {% trans_default_domain 'PlatformeBundle' %}
 
 <div class="filtre">
-    <input class="recherche" placeholder="{{ 'board.search'|trans }}">
+    <input id="recherche" placeholder="{{ 'board.search'|trans }}">
 
-    <select class="domaine">
-        <option value>{{ 'board.domain'|trans }}</option>
+    <button id="domaine" onclick="domaineList()" value="none">{{ 'board.domain'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <div id="domaine-list">
         {% block domain %}
         {% endblock domain %}
-    </select>
+    </div>
 
-    <select class="matiere">
-        <option value>{{ 'board.subject'|trans }}</option>
+    <button id="matiere"  onclick="matiereList()" value="none">{{ 'board.subject'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <div id="matiere-list">
         {% block subject %}
         {% endblock subject %}
-    </select>
+    </div>
 
-    <select class="theme">
-        <option value>{{ 'board.theme'|trans }}</option>
+    <button id="theme" onclick="themeList()" value="none">{{ 'board.theme'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <div id="theme-list">
         {% block theme %}
         {% endblock theme %}
-    </select>
+    </div>
 
-    <select class="chapitre">
-        <option value>{{ 'board.chapter'|trans }}</option>
+    <button id="chapitre" onclick="chapitreList()" value="none">{{ 'board.chapter'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <div id="chapitre-list">
         {% block chapter %}
         {% endblock chapter %}
-    </select>
+    </div>
 
-    <select class="type">
-        <option value=>{{ 'board.type'|trans }}</option>
-        <option value="cours">{{ 'type.course'|trans }}</option>
-        <option value="exercice">{{ 'type.exercise'|trans }}</option>
-    </select>
+    <button id="type" onclick="typeList()" value="none">{{ 'board.type'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <div id="type-list">
+        <button class="choix" onclick="typeChoix('type.course', '{{ 'type.course'|trans }}')">{{ 'type.course'|trans }}</button>
+        <button class="choix" onclick="typeChoix('type.exercise', '{{ 'type.exercise'|trans }}')">{{ 'type.exercise'|trans }}</button>
+    </div>
 
-    <select class="niveau">
-        <option value>{{ 'board.level'|trans }}</option>
+    <button id="niveau" onclick="niveauList()" value="none">{{ 'board.level'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <div id="niveau-list">
         {% for niveau in listNiveaux %}
-            <option value="{{ niveau.level }}">{{ niveau.level|trans }}</option>
+            <button class="choix" onclick="niveauChoix('{{ niveau.level }}', '{{ niveau.level|trans }}')">{{ niveau.level|trans }}</button>
         {% endfor %}
-    </select>
+    </div>
 </div>
