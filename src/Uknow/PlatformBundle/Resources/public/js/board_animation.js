@@ -138,3 +138,7 @@ function niveauChoix(id, traduction){
     $('#niveau-list').slideUp(300);
     $('.board').animate({width : '200px'}, 300);
 }
+
+$.click(function(){
+    if()
+});
