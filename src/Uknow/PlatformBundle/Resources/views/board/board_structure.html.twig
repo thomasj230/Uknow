@@ -3,45 +3,45 @@
 {% trans_default_domain 'Structure' %}
 
 {% block domain %}
-    <button class="choix" onclick="domaineChoix('{{ 'board.domain' }}', '{{ 'board.domain'|trans }}')">{{ 'board.domain'|trans }}</button>
+    <button class="choix" onclick="domaineChoix('none', '{{ 'board.domain'|trans }}')">{{ 'board.domain'|trans }}</button>
     {% for domains in listStructure %}
-        <button class="choix" onclick="domaineChoix('{{ domains.domain }}', '{{ domains.domain|trans }}')">{{ domains.domain|trans }}</button>
+        <button id="{{ domains.domain }}" class="choix"  onclick="domaineChoix('{{ domains.domain }}', '{{ domains.domain|trans }}')">{{ domains.domain|trans }}</button>
     {% endfor %}
 {% endblock domain %}
 
 {% block subject %}
-    <button class="choix" onclick="matiereChoix('{{ 'board.subject' }}', '{{ 'board.subject'|trans }}')">{{ 'board.subject'|trans }}</button>
+    <button class="choix" onclick="matiereChoix('none', '{{ 'board.subject'|trans }}')">{{ 'board.subject'|trans }}</button>
     {% for domains in listStructure %}
-        <div class="titre-group">{{ domains.domain|trans }}</div>
+        <div id="{{ domains.domain }}" class="titre-group">{{ domains.domain|trans }}</div>
         {% for subjects in domains.subjects %}
-        <button class="choix one" onclick="matiereChoix('{{ subjects.subject }}', '{{ subjects.subject|trans }}')">{{ subjects.subject|trans }}</button>
+        <button id="{{ subjects.subject }}" class="choix one"  onclick="matiereChoix('{{ subjects.subject }}', '{{ subjects.subject|trans }}')">{{ subjects.subject|trans }}</button>
         {% endfor %}
     {% endfor %}
 {% endblock subject %}
 
 {% block theme %}
-    <button class="choix" onclick="themeChoix('{{ 'board.theme' }}', '{{ 'board.theme'|trans }}')">{{ 'board.theme'|trans }}</button>
+    <button class="choix" onclick="themeChoix('none', '{{ 'board.theme'|trans }}')">{{ 'board.theme'|trans }}</button>
     {% for domains in listStructure %}
-        <div class="titre-group">{{ domains.domain|trans }}</div>
+        <div id="{{ domains.domain }}" class="titre-group">{{ domains.domain|trans }}</div>
         {% for subjects in domains.subjects %}
-            <div class="titre-group one">{{ subjects.subject|trans }}</div>
+            <div id="{{ subjects.subject }}" class="titre-group one">{{ subjects.subject|trans }}</div>
             {% for themes in subjects.themes %}
-                <button class="choix two" onclick="themeChoix('{{ themes.theme }}', '{{ themes.theme|trans }}')">{{ themes.theme|trans }}</button>
+                <button id="{{ themes.theme }}" class="choix two"  onclick="themeChoix('{{ themes.theme }}', '{{ themes.theme|trans }}')">{{ themes.theme|trans }}</button>
             {% endfor %}
         {% endfor %}
     {% endfor %}
 {% endblock theme %}
 
 {% block chapter %}
-    <button class="choix" onclick="chapitreChoix('{{ 'board.chapter' }}', '{{ 'board.chapter'|trans }}')">{{ 'board.chapter'|trans }}</button>
+    <button class="choix" onclick="chapitreChoix('none', '{{ 'board.chapter'|trans }}')">{{ 'board.chapter'|trans }}</button>
     {% for domains in listStructure %}
-        <div class="titre-group">{{ domains.domain|trans }}</div>
+        <div id="{{ domains.domain }}" class="titre-group">{{ domains.domain|trans }}</div>
         {% for subjects in domains.subjects %}
-            <div class="titre-group one">{{ subjects.subject|trans }}</div>
+            <div id="{{ subjects.subject }}" class="titre-group one">{{ subjects.subject|trans }}</div>
             {% for themes in subjects.themes %}
-                <div class="titre-group two">{{ themes.theme|trans }}</div>
+                <div id="{{ themes.theme }}" class="titre-group two">{{ themes.theme|trans }}</div>
                 {% for chapters in themes.chapters %}
-                    <button class="choix three" onclick="chapitreChoix('{{ chapters }}', '{{ chapters|trans }}')">{{ chapters|trans }}</button>
+                    <button id="{{ chapters }}" class="choix three"  onclick="chapitreChoix('{{ chapters }}', '{{ chapters|trans }}')">{{ chapters|trans }}</button>
                 {% endfor %}
             {% endfor %}
         {% endfor %}

@@ -23,6 +23,7 @@ function domaineChoix(id, traduction){
     $('#domaine').val(id).html(traduction + '<span class="glyphicon glyphicon-triangle-bottom"></span>');
     $('#domaine-list').slideUp(300);
     $('.board').animate({width : '200px'}, 300);
+    domaineChange(id);
 }
 
 function matiereList(){
@@ -138,7 +139,3 @@ function niveauChoix(id, traduction){
     $('#niveau-list').slideUp(300);
     $('.board').animate({width : '200px'}, 300);
 }
-
-$.click(function(){
-    if()
-});
