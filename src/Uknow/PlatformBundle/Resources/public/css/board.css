@@ -3,6 +3,10 @@
     height: calc(100% - 80px);
 }
 
+.none{
+    display:none;
+}
+
 #recherche
 {
     width: 100%;
@@ -71,6 +75,7 @@
 #type,
 #niveau
 {
+    font-style: italic;
     width: 100%;
     min-height: 50px;
     background-color: #133175;

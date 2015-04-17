@@ -1,3 +1,9 @@
+board:
+    domain: Les domaines
+    subject: Les matières
+    theme: Les thèmes
+    chapter: Les chapitres
+
 D01: Littérature
 D02: Sciences
 

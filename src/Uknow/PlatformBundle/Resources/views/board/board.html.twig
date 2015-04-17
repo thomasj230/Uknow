@@ -3,47 +3,47 @@
 <div class="filtre">
     <input id="recherche" placeholder="{{ 'board.search'|trans }}">
     <div class="board-nav">
-        <button class="col-xs-4 active" onclick="lienCours()"><span class="glyphicon glyphicon-book"></span></button>
-        <button class="col-xs-4" ><span class="glyphicon glyphicon-list-alt"></span></button>
-        <button class="col-xs-4" ><span class="glyphicon glyphicon-comment"></span></button>
+        <button id="lienCours" class="col-xs-4 active" onclick="lienCours()"><span class="glyphicon glyphicon-book"></span></button>
+        <button id="lienEvaluation" class="col-xs-4" ><span class="glyphicon glyphicon-list-alt"></span></button>
+        <button id="lienForum" class="col-xs-4" ><span class="glyphicon glyphicon-comment"></span></button>
     </div>
 
-    <button id="domaine" onclick="domaineList()" value="none">{{ 'board.domain'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <button id="domaine" onclick="domaineList()">{{ 'board.domain'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="domaine-list">
         {% block domain %}
         {% endblock domain %}
     </div>
 
-    <button id="matiere"  onclick="matiereList()" value="none">{{ 'board.subject'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <button id="matiere"  onclick="matiereList()">{{ 'board.subject'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="matiere-list">
         {% block subject %}
         {% endblock subject %}
     </div>
 
-    <button id="theme" onclick="themeList()" value="none">{{ 'board.theme'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <button id="theme" onclick="themeList()">{{ 'board.theme'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="theme-list">
         {% block theme %}
         {% endblock theme %}
     </div>
 
-    <button id="chapitre" onclick="chapitreList()" value="none">{{ 'board.chapter'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <button id="chapitre" onclick="chapitreList()">{{ 'board.chapter'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="chapitre-list">
         {% block chapter %}
         {% endblock chapter %}
     </div>
 
-    <button id="type" onclick="typeList()" value="none">{{ 'board.type'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <button id="type" onclick="typeList()">{{ 'board.type'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="type-list">
-        <button class="choix" onclick="typeChoix('board.type', '{{ 'board.type'|trans }}')">{{ 'board.type'|trans }}</button>
-        <button class="choix" onclick="typeChoix('type.course', '{{ 'type.course'|trans }}')">{{ 'type.course'|trans }}</button>
-        <button class="choix" onclick="typeChoix('type.exercise', '{{ 'type.exercise'|trans }}')">{{ 'type.exercise'|trans }}</button>
+        <button id="none" class="choix none">{{ 'board.type'|trans }}</button>
+        <button id="type.course" class="choix" onclick="typeChoix('type.course', '{{ 'type.course'|trans }}')">{{ 'type.course'|trans }}</button>
+        <button id="type.exercise" class="choix" onclick="typeChoix('type.exercise', '{{ 'type.exercise'|trans }}')">{{ 'type.exercise'|trans }}</button>
     </div>
 
-    <button id="niveau" onclick="niveauList()" value="none">{{ 'board.level'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
+    <button id="niveau" onclick="niveauList()">{{ 'board.level'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="niveau-list">
-        <button class="choix" onclick="niveauChoix('{{ 'board.level' }}', '{{ 'board.level'|trans }}')">{{ 'board.level'|trans }}</button>
+        <button id="none" class="choix none">{{ 'board.level'|trans }}</button>
         {% for niveau in listNiveaux %}
-            <button class="choix" onclick="niveauChoix('{{ niveau.level }}', '{{ niveau.level|trans }}')">{{ niveau.level|trans }}</button>
+            <button id="{{ niveau.level }}" class="choix" onclick="niveauChoix('{{ niveau.level }}', '{{ niveau.level|trans }}')">{{ niveau.level|trans }}</button>
         {% endfor %}
     </div>
 </div>
