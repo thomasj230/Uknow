@@ -30,10 +30,12 @@ header .col-xs-3,
 .nav .menu-briefcase-down,
 .nav .menu-education-down
 {
+    width: calc(11.11111111% - 10px);
     display: none;
     background-color: #3B5798;
     position: fixed;
     padding: 10px;
+    font-size: 0.8em;
     list-style-type: none;
 }
 

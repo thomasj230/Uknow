@@ -1,0 +1,44 @@
+.donneesEvaluation,
+.donneesForum
+{
+    display: none;
+}
+
+.donneesCours,
+.donneesEvaluation,
+.donneesForum
+{
+    padding-top: 10px;
+    width: 931px;
+    margin: auto;
+}
+
+.etiquette
+{
+    width: 210px;
+    margin: 10px;
+    height: 150px;
+    background-color: #555;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.question
+{
+    width: 100%;
+    margin: 10px;
+    height: 60px;
+    background-color: #555;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.etiquette
+{
+    width: 250px;
+    margin: 10px;
+    height: 100px;
+    background-color: #555;
+    border-radius: 5px;
+    display: inline-block;
+}

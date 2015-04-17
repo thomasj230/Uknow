@@ -114,10 +114,49 @@ function chapitreChange(id){
 }
 
 function lienCours(){
-    if($('#lienCours').attr('class') == 'col-xs-4 active'){
+    if($('#lienCours').attr('class') == 'col-xs-4 active' || $('#lienCours').attr('class') == 'col-xs-12 active'){
         domaineChange('all');
         textdomaine('none');
         $('#type').css('font-style', 'italic').html($('#type-list > #none').html() + '<span class="glyphicon glyphicon-triangle-bottom"></span>');
         $('#niveau').css('font-style', 'italic').html($('#niveau-list > #none').html() + '<span class="glyphicon glyphicon-triangle-bottom"></span>');
+    }else{
+        $('#lienCours').attr('class', 'col-xs-4 active');
+        $('#lienEvaluation').attr('class', 'col-xs-4');
+        $('#lienForum').attr('class', 'col-xs-4');
+        $('.donneesCours').fadeIn();
+        $('.donneesEvaluation').fadeOut();
+        $('.donneesForum').fadeOut();
+    }
+}
+
+function lienEvaluation(){
+    if($('#lienEvaluation').attr('class') == 'col-xs-4 active'){
+        domaineChange('all');
+        textdomaine('none');
+        $('#type').css('font-style', 'italic').html($('#type-list > #none').html() + '<span class="glyphicon glyphicon-triangle-bottom"></span>');
+        $('#niveau').css('font-style', 'italic').html($('#niveau-list > #none').html() + '<span class="glyphicon glyphicon-triangle-bottom"></span>');
+    }else{
+        $('#lienCours').attr('class', 'col-xs-4');
+        $('#lienEvaluation').attr('class', 'col-xs-4 active');
+        $('#lienForum').attr('class', 'col-xs-4');
+        $('.donneesCours').fadeOut();
+        $('.donneesEvaluation').fadeIn();
+        $('.donneesForum').fadeOut();
+    }
+}
+
+function lienForum(){
+    if($('#lienForum').attr('class') == 'col-xs-4 active'){
+        domaineChange('all');
+        textdomaine('none');
+        $('#type').css('font-style', 'italic').html($('#type-list > #none').html() + '<span class="glyphicon glyphicon-triangle-bottom"></span>');
+        $('#niveau').css('font-style', 'italic').html($('#niveau-list > #none').html() + '<span class="glyphicon glyphicon-triangle-bottom"></span>');
+    }else{
+        $('#lienCours').attr('class', 'col-xs-4');
+        $('#lienEvaluation').attr('class', 'col-xs-4');
+        $('#lienForum').attr('class', 'col-xs-4 active');
+        $('.donneesCours').fadeOut();
+        $('.donneesEvaluation').fadeOut();
+        $('.donneesForum').fadeIn();
     }
 }

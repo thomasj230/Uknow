@@ -1,0 +1,404 @@
+<?php
+
+namespace Uknow\PlatformBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Donnees
+ *
+ * @ORM\Table()
+ * @ORM\Entity(repositoryClass="Uknow\PlatformBundle\Entity\DonneesRepository")
+ */
+class Donnees
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="structure", type="string", length=15)
+     */
+    private $structure;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre", type="string", length=255)
+     */
+    private $titre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="texte", type="text")
+     */
+    private $texte;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="correction", type="text")
+     */
+    private $correction;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="datetime", nullable=true)
+     */
+    private $date;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="pertinent", type="integer")
+     */
+    private $pertinent;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="developper", type="integer")
+     */
+    private $developper;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="inadequat", type="integer")
+     */
+    private $inadequat;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=255)
+     */
+    private $type;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="niveau", type="string", length=255)
+     */
+    private $niveau;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="fiabilite", type="integer")
+     */
+    private $fiabilite;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="temps", type="integer")
+     */
+    private $temps;
+
+    public function __construct(){
+        $this->date = new \DateTime();
+        $this->modification = 0;
+        $this->pertinent = 0;
+        $this->developper = 0;
+        $this->inutile = 0;
+        $this->fiabilite = 0;
+    }
+    
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set structure
+     *
+     * @param string $structure
+     * @return Donnees
+     */
+    public function setStructure($structure)
+    {
+        $this->structure = $structure;
+
+        return $this;
+    }
+
+    /**
+     * Get structure
+     *
+     * @return string
+     */
+    public function getStructure()
+    {
+        return $this->structure;
+    }
+
+    /**
+     * Set titre
+     *
+     * @param string $titre
+     * @return Donnees
+     */
+    public function setTitre($titre)
+    {
+        $this->titre = $titre;
+
+        return $this;
+    }
+
+    /**
+     * Get titre
+     *
+     * @return string 
+     */
+    public function getTitre()
+    {
+        return $this->titre;
+    }
+
+    /**
+     * Set texte
+     *
+     * @param string $texte
+     * @return Donnees
+     */
+    public function setTexte($texte)
+    {
+        $this->texte = $texte;
+
+        return $this;
+    }
+
+    /**
+     * Get texte
+     *
+     * @return string 
+     */
+    public function getTexte()
+    {
+        return $this->texte;
+    }
+
+    /**
+     * Set date
+     *
+     * @param \DateTime $date
+     * @return Donnees
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    /**
+     * Get date
+     *
+     * @return \DateTime 
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * Set pertinent
+     *
+     * @param integer $pertinent
+     * @return Donnees
+     */
+    public function setPertinent($pertinent)
+    {
+        $this->pertinent = $pertinent;
+
+        return $this;
+    }
+
+    /**
+     * Get pertinent
+     *
+     * @return integer 
+     */
+    public function getPertinent()
+    {
+        return $this->pertinent;
+    }
+
+    /**
+     * Set developper
+     *
+     * @param integer $developper
+     * @return Donnees
+     */
+    public function setDevelopper($developper)
+    {
+        $this->developper = $developper;
+
+        return $this;
+    }
+
+    /**
+     * Get developper
+     *
+     * @return integer 
+     */
+    public function getDevelopper()
+    {
+        return $this->developper;
+    }
+
+    /**
+     * Set inadequat
+     *
+     * @param integer $inadequat
+     * @return Donnees
+     */
+    public function setInadequat($inadequat)
+    {
+        $this->inadequat = $inadequat;
+
+        return $this;
+    }
+
+    /**
+     * Get inadequat
+     *
+     * @return integer 
+     */
+    public function getInadequat()
+    {
+        return $this->inadequat;
+    }
+
+    /**
+     * Set type
+     *
+     * @param string $type
+     * @return Donnees
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return string 
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * Set fiabilite
+     *
+     * @param integer $fiabilite
+     * @return Donnees
+     */
+    public function setFiabilite($fiabilite)
+    {
+        $this->fiabilite = $fiabilite;
+
+        return $this;
+    }
+
+    /**
+     * Get fiabilite
+     *
+     * @return integer 
+     */
+    public function getFiabilite()
+    {
+        return $this->fiabilite;
+    }
+
+    /**
+     * Set temps
+     *
+     * @param integer $temps
+     * @return Donnees
+     */
+    public function setTemps($temps)
+    {
+        $this->temps = $temps;
+
+        return $this;
+    }
+
+    /**
+     * Get temps
+     *
+     * @return integer 
+     */
+    public function getTemps()
+    {
+        return $this->temps;
+    }
+
+    /**
+     * Set niveau
+     *
+     * @param string $niveau
+     * @return Donnees
+     */
+    public function setNiveau($niveau)
+    {
+        $this->niveau = $niveau;
+
+        return $this;
+    }
+
+    /**
+     * Get niveau
+     *
+     * @return string 
+     */
+    public function getNiveau()
+    {
+        return $this->niveau;
+    }
+
+    /**
+     * Set correction
+     *
+     * @param string $correction
+     * @return Donnees
+     */
+    public function setCorrection($correction)
+    {
+        $this->correction = $correction;
+
+        return $this;
+    }
+
+    /**
+     * Get correction
+     *
+     * @return string 
+     */
+    public function getCorrection()
+    {
+        return $this->correction;
+    }
+}

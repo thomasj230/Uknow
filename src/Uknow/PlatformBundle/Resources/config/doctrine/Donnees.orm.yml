@@ -1,0 +1,52 @@
+Uknow\PlatformBundle\Entity\Donnees:
+    type: entity
+    table: null
+    repositoryClass: Uknow\PlatformBundle\Entity\DonneesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        structure:
+            type: string
+            length: 15
+            nullable: true
+        titre:
+            type: string
+            length: 255
+            nullable: true
+        texte:
+            type: text
+            nullable: true
+        correction:
+            type: text
+            nullable: true
+        date:
+            type: datetime
+            nullable: true
+        pertinent:
+            type: integer
+            nullable: true
+        developper:
+            type: integer
+            nullable: true
+        inadequat:
+            type: integer
+            nullable: true
+        type:
+            type: string
+            length: 255
+            nullable: true
+        niveau:
+            type: string
+            length: 255
+            nullable: true
+        fiabilite:
+            type: integer
+            nullable: true
+        temps:
+            type: integer
+            nullable: true
+    lifecycleCallbacks: {  }

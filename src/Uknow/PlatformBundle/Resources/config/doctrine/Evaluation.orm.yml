@@ -1,0 +1,22 @@
+Uknow\PlatformBundle\Entity\Evaluation:
+    type: entity
+    table: null
+    repositoryClass: Uknow\PlatformBundle\Entity\EvaluationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        copie:
+            type: text
+        date:
+            type: datetime
+        structure:
+            type: string
+            length: 255
+        note:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

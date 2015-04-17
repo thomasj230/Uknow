@@ -9,6 +9,7 @@
         '@UknowPlatformBundle/Resources/public/css/header.css'
         '@UknowPlatformBundle/Resources/public/css/layout.css'
         '@UknowPlatformBundle/Resources/public/css/board.css'
+        '@UknowPlatformBundle/Resources/public/css/donnees.css'
         %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
         {% endstylesheets %}
@@ -39,10 +40,18 @@
                   </footer>
                 </section>
 
-                <section class="container-fluid">
+                <section class="container-fluid" style="margin-left: 210px">
                     <div class="row">
                         <div class="col-sm-12">
-
+                            <div class="donneesCours">
+                                {{ render(controller('UknowPlatformBundle:Data:cours')) }}
+                            </div>
+                            <div class="donneesEvaluation">
+                                {{ render(controller('UknowPlatformBundle:Data:evaluation')) }}
+                            </div>
+                            <div class="donneesForum">
+                                {{ render(controller('UknowPlatformBundle:Data:forum')) }}
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -55,6 +64,7 @@
         '@UknowPlatformBundle/Resources/public/js/header.js'
         '@UknowPlatformBundle/Resources/public/js/board_animation.js'
         '@UknowPlatformBundle/Resources/public/js/board_control.js'
+        '@UknowPlatformBundle/Resources/public/js/donnees.js'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}

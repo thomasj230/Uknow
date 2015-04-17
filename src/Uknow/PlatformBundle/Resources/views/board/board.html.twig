@@ -3,9 +3,13 @@
 <div class="filtre">
     <input id="recherche" placeholder="{{ 'board.search'|trans }}">
     <div class="board-nav">
-        <button id="lienCours" class="col-xs-4 active" onclick="lienCours()"><span class="glyphicon glyphicon-book"></span></button>
-        <button id="lienEvaluation" class="col-xs-4" ><span class="glyphicon glyphicon-list-alt"></span></button>
-        <button id="lienForum" class="col-xs-4" ><span class="glyphicon glyphicon-comment"></span></button>
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            <button id="lienCours" class="col-xs-4 active" onclick="lienCours()"><span class="glyphicon glyphicon-book"></span></button>
+            <button id="lienEvaluation" class="col-xs-4" onclick="lienEvaluation()"><span class="glyphicon glyphicon-list-alt"></span></button>
+            <button id="lienForum" class="col-xs-4" onclick="lienForum()"><span class="glyphicon glyphicon-comment"></span></button>
+        {% else %}
+            <button id="lienCours" class="col-xs-12 active" onclick="lienCours()"><span class="glyphicon glyphicon-book"></span>Tous les cours</button>
+        {% endif %}
     </div>
 
     <button id="domaine" onclick="domaineList()">{{ 'board.domain'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
