@@ -3,14 +3,12 @@
 {% trans_default_domain 'Structure' %}
 
 {% block domain %}
-    <button class="choix" onclick="domaineChoix('none', '{{ 'board.domain'|trans }}')">{{ 'board.domain'|trans }}</button>
     {% for domains in listStructure %}
         <button id="{{ domains.domain }}" class="choix"  onclick="domaineChoix('{{ domains.domain }}', '{{ domains.domain|trans }}')">{{ domains.domain|trans }}</button>
     {% endfor %}
 {% endblock domain %}
 
 {% block subject %}
-    <button class="choix" onclick="matiereChoix('none', '{{ 'board.subject'|trans }}')">{{ 'board.subject'|trans }}</button>
     {% for domains in listStructure %}
         <div id="{{ domains.domain }}" class="titre-group">{{ domains.domain|trans }}</div>
         {% for subjects in domains.subjects %}
@@ -20,7 +18,6 @@
 {% endblock subject %}
 
 {% block theme %}
-    <button class="choix" onclick="themeChoix('none', '{{ 'board.theme'|trans }}')">{{ 'board.theme'|trans }}</button>
     {% for domains in listStructure %}
         <div id="{{ domains.domain }}" class="titre-group">{{ domains.domain|trans }}</div>
         {% for subjects in domains.subjects %}
@@ -33,7 +30,6 @@
 {% endblock theme %}
 
 {% block chapter %}
-    <button class="choix" onclick="chapitreChoix('none', '{{ 'board.chapter'|trans }}')">{{ 'board.chapter'|trans }}</button>
     {% for domains in listStructure %}
         <div id="{{ domains.domain }}" class="titre-group">{{ domains.domain|trans }}</div>
         {% for subjects in domains.subjects %}

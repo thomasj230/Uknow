@@ -2,6 +2,11 @@
 
 <div class="filtre">
     <input id="recherche" placeholder="{{ 'board.search'|trans }}">
+    <div class="board-nav">
+        <button class="col-xs-4 active" onclick="lienCours()"><span class="glyphicon glyphicon-book"></span></button>
+        <button class="col-xs-4" ><span class="glyphicon glyphicon-list-alt"></span></button>
+        <button class="col-xs-4" ><span class="glyphicon glyphicon-comment"></span></button>
+    </div>
 
     <button id="domaine" onclick="domaineList()" value="none">{{ 'board.domain'|trans }}<span class="glyphicon glyphicon-triangle-bottom"></span></button>
     <div id="domaine-list">

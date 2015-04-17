@@ -20,7 +20,7 @@ header
 .board
 {
     background-color: #133175;
-    width: 200px;
+    width: 210px;
     height: calc(100% - 50px);
     position: fixed;
     bottom: 0;

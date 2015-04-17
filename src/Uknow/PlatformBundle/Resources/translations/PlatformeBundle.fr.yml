@@ -1,11 +1,11 @@
 board:
     search: Un cours à rechercher ?
-    domain: Tous les domaines
-    subject: Toutes les matières
-    theme: Tous les thèmes
-    chapter: Tous les chapitres
-    type: Tous les types
-    level: Tous les niveaux
+    domain: Les domaines
+    subject: Les matières
+    theme: Les thèmes
+    chapter: Les chapitres
+    type: Les types
+    level: Les niveaux
 
 type:
     course: Cours

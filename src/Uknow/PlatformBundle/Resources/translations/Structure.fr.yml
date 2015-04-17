@@ -1,9 +1,3 @@
-board:
-    domain: Tous les domaines
-    subject: Toutes les matières
-    theme: Tous les thèmes
-    chapter: Tous les chapitres
-
 D01: Littérature
 D02: Sciences
 
