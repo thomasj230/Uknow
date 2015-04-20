@@ -1,43 +1,52 @@
+{% trans_default_domain 'PlatformeBundle' %}
+
 {% for donnees in listDonnees %}
     <div class="etiquette">
         <div class="titre">
-
+            <div class="barre"></div>
+            <div class="titre-centrer">{{ donnees.titre }}</div>
         </div>
         <div class="description">
+
+        </div>
+        <div class="liste">
+
+        </div>
+        <div class="parametre">
 
         </div>
         <div class="infos">
             <div class="row">
                 <div class="col-xs-2">
-                    <div class="structure">
-
-                    </div>
+                    <button class="structure">
+                       <span class="glyphicon glyphicon-info-sign"></span>
+                    </button>
                 </div>
                 <div class="col-xs-2">
-                    <div class="temps">
-
-                    </div>
+                    <button class="type">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </button>
                 </div>
                 <div class="col-xs-2">
-                    <div class="fiabilite">
-
-                    </div>
+                    <button class="niveau">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    </button>
                 </div>
                 <div class="col-xs-2">
                     <div class="pertinent">
-
+                        <span>{{ donnees.pertinent }}</span>
                     </div>
                 </div>
                 <div class="col-xs-2">
                     <div class="developper">
-
+                        <span>{{ donnees.developper }}</span>
                     </div>
                 </div>
-
+                <div class="col-xs-2">
                     <div class="inadequat">
-
+                        <span>{{ donnees.inadequat }}</span>
                     </div>
-
+                </div>
             </div>
         </div>
     </div>

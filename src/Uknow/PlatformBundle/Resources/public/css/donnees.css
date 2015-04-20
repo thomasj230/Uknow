@@ -18,14 +18,34 @@
     width: 210px;
     margin: 10px;
     height: 210px;
-    background-color: #B8B8B8;
+    background-color: #FFFFFF;
     border-radius: 10px;
     display: inline-block;
 }
 
-.etiquette .titre
-{
+.etiquette .titre {
     height: 170px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.etiquette .titre .barre
+{
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.etiquette .titre .titre-centrer
+{
+    width: 175px;
+    padding-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #555;
 }
 
 .etiquette .description
@@ -36,7 +56,7 @@
 
 .etiquette .infos .row
 {
-    background-color: #555;
+    background-color: #d9534f;
     height: 40px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -48,6 +68,55 @@
 {
     margin: 0;
     padding: 0;
+}
+
+.etiquette .infos .type,
+.etiquette .infos .niveau,
+.etiquette .infos .structure
+{
+    padding:10px 0;
+    line-height: 19px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    height: 40px;
+    background-color: #555;
+    width: 100%;
+    border: 0;
+    outline: none;
+    transition-property: color, background-color;
+    transition-duration: 300ms;
+    -moz-transition-property: color, background-color;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-property: color, background-color;
+    -webkit-transition-duration: 300ms;
+    -o-transition-property: color, background-color;
+    -o-transition-duration: 300ms;
+}
+
+.etiquette .infos .structure
+{
+    border-bottom-left-radius: 10px;
+}
+
+.etiquette .infos .type:hover,
+.etiquette .infos .niveau:hover,
+.etiquette .infos .structure:hover
+{
+    color: #555;
+    background-color: #FFFFFF;
+}
+
+.etiquette .infos .pertinent,
+.etiquette .infos .developper,
+.etiquette .infos .inadequat
+{
+    padding:10px 0;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 .etiquette .infos .pertinent
@@ -64,7 +133,6 @@
 
 .etiquette .infos .inadequat
 {
-    margin-left: 174px;
     background-color: #d9534f;
     height: 40px;
     border-bottom-right-radius: 10px;
