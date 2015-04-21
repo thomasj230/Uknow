@@ -1,3 +1,14 @@
+.board
+{
+    background-color: #133175;
+    width: 210px;
+    height: calc(100% - 50px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+}
+
 .filtre
 {
     height: calc(100% - 80px);

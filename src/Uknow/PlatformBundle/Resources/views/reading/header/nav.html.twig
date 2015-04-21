@@ -1,0 +1,39 @@
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    <div class="nav">
+        <div class="col-xs-4">
+            <div class="menu-pencil">
+                <div class="icon">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </div>
+                <ul class="menu-pencil-down">
+                    <li>Ajouter un cours</li>
+                    <li>Ajouter un exercice</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="menu-briefcase">
+                <div class="icon">
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                </div>
+                <ul class="menu-briefcase-down">
+                    <li>Mes cours</li>
+                    <li>Mes exercices</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="menu-education">
+                <div class="icon">
+                    <span class="glyphicon glyphicon-education"></span>
+                </div>
+                <ul class="menu-education-down">
+                    <li>Faire un exercice</li>
+                    <li>Faire un test</li>
+                    <li>Faire un examen</li>
+                    <li>Mes résultats</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endif %}

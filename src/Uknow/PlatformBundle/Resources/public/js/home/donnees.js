@@ -30,8 +30,5 @@ function afficheDetails(index){
     $('#bouton-details_' + index).attr('class', 'bouton-details active');
 }
 
-function descriptionOver(index){
-
-}
 
 

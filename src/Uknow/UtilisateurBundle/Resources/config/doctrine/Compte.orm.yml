@@ -10,18 +10,17 @@ Uknow\UtilisateurBundle\Entity\Compte:
     fields:
         niveauChapitre:
             type: text
-            length: 255
             nullable: true
         voixChapitre:
             type: text
-            length: 255
             nullable: true
         donneesSauvegardees:
-            type: string
-            length: 255
+            type: text
             nullable: true
         donneesEvaluees:
-            type: string
-            length: 255
+            type: text
+            nullable: true
+        pagesOuvertes:
+            type: text
             nullable: true
     lifecycleCallbacks: {  }

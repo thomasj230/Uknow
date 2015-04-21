@@ -22,7 +22,7 @@ class DataController extends Controller{
         $serviceStructure = $this->container->get('uknow_platform.liste');
         $listDonnees = $serviceStructure->structure($listDonnees);
 
-        return $this->render('UknowPlatformBundle:data:cours.html.twig', array(
+        return $this->render('UknowPlatformBundle:home/data:cours.html.twig', array(
             'listDonnees' => $listDonnees,
         ));
     }
@@ -35,7 +35,7 @@ class DataController extends Controller{
             ->findAll();
 
 
-        return $this->render('UknowPlatformBundle:data:evaluation.html.twig', array(
+        return $this->render('UknowPlatformBundle:home/data:evaluation.html.twig', array(
             'listEvaluation' => $listEvaluation,
         ));
     }
@@ -47,7 +47,7 @@ class DataController extends Controller{
             ->getRepository('UknowPlatformBundle:Question')
             ->findAll();
 
-        return $this->render('UknowPlatformBundle:data:forum.html.twig', array(
+        return $this->render('UknowPlatformBundle:home/data:forum.html.twig', array(
             'listQuestion' => $listQuestion,
         ));
     }

@@ -1,0 +1,12 @@
+<div class="profil">
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    Connecté en tant que {{ app.user.username }} - <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
+{% else %}
+    <div class="col-xs-6">
+        <button data-toggle="modal" data-backdrop="true" data-target="#Connexion">Connexion</button>
+    </div>
+    <div class="col-xs-6">
+        <button data-toggle="modal" data-backdrop="true" data-target="#Inscription">Inscription</button>
+    </div>
+{% endif %}
+</div>

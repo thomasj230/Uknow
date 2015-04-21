@@ -1,8 +1,24 @@
+header
+{
+    background-color: #133175;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    line-height: 50px;
+    z-index: 100;
+}
+
 .title
 {
-    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+.title a
+{
     font-size: 2em;
-    text-align:center
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .nav .col-xs-4,
@@ -54,17 +70,22 @@ header .col-xs-3,
 
 .profil button
 {
-    color: white;
     font-size: 1.5em;
-    text-decoration: none;
-    background-color: #133175;
     border: 0;
     padding: 0;
     margin: 0;
     height: 50px;
     width: 100%;
+    color: white;
+    text-decoration: none;
+    background-color: #133175;
     text-align: center;
     outline: none;
+}
+
+.title,
+.profil button
+{
     transition-property: background-color;
     transition-duration: 400ms;
     -moz-transition-property: background-color;
@@ -75,6 +96,7 @@ header .col-xs-3,
     -o-transition-duration: 400ms;
 }
 
+.title:hover,
 .profil button:hover
 {
     background-color: #20418E;

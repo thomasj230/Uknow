@@ -47,7 +47,7 @@ class Compte extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="donnees_sauvegardees", type="string", length=255, nullable=true)
+     * @ORM\Column(name="donnees_sauvegardees", type="text", nullable=true)
      * @Assert\Null()
      */
     protected $donneesSauvegardees;
@@ -55,10 +55,18 @@ class Compte extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="donnees_evaluees", type="string", length=255, nullable=true)
+     * @ORM\Column(name="donnees_evaluees", type="text", nullable=true)
      * @Assert\Null()
      */
     protected $donneesEvaluees;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pages_ouvertes", type="text", nullable=true)
+     * @Assert\Null()
+     */
+    protected $pagesOuvertes;
 
     /**
      * Get id
@@ -160,5 +168,28 @@ class Compte extends BaseUser
     public function getDonneesEvaluees()
     {
         return $this->donneesEvaluees;
+    }
+
+    /**
+     * Set pagesOuvertes
+     *
+     * @param string $pagesOuvertes
+     * @return Compte
+     */
+    public function setPagesOuvertes($pagesOuvertes)
+    {
+        $this->pagesOuvertes = $pagesOuvertes;
+
+        return $this;
+    }
+
+    /**
+     * Get pagesOuvertes
+     *
+     * @return string
+     */
+    public function getPagesOuvertes()
+    {
+        return $this->pagesOuvertes;
     }
 }
