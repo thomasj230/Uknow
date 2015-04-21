@@ -2,33 +2,57 @@
 
 {% for donnees in listDonnees %}
     <div class="etiquette">
-        <div class="titre">
-            <div class="barre"></div>
-            <div class="titre-centrer">{{ donnees.titre }}</div>
-        </div>
-        <div class="description">
-
-        </div>
-        <div class="liste">
-
-        </div>
-        <div class="parametre">
-
+        <div id="carousel_{{ loop.index }}" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="titre" onclick="">
+                        <div class="barre"></div>
+                        <div class="titre-centrer">{{ donnees.titre }}</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="description" onclick="afficheTitre({{ loop.index }})" onmouseover="descriptionOver({{ loop.index }})">
+                        <p>{{ donnees.description }}</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="liste" onclick="afficheTitre({{ loop.index }})" onmouseover="listeOver({{ loop.index }})">
+                        <p><em>{{ 'structure.domain'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:domain.html.twig') }}<br/>
+                            <em>{{ 'structure.subject'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:subject.html.twig') }}<br/>
+                            <em>{{ 'structure.theme'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:theme.html.twig') }}<br/>
+                            <em>{{ 'structure.chapter'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:chapter.html.twig') }}<br/>
+                            <em>{{ 'structure.type'|trans }}: </em>{{ donnees.type|trans }}<br/>
+                            <em>{{ 'structure.level'|trans }}: </em>{{ donnees.niveau|trans }}<br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="details" onclick="afficheTitre({{ loop.index }})" onmouseover="titreOver({{ loop.index }})">
+                        <p><em>{{ 'detail.date'|trans }}: </em>{{ donnees.date|date('d/m/Y') }}<br/>
+                            <em>{{ 'detail.time'|trans }}: </em>{{ donnees.temps }}<br/>
+                            <em>{{ 'detail.pertinent'|trans }}: </em>{{ donnees.pertinent }}<br/>
+                            <em>{{ 'detail.developper'|trans }}: </em>{{ donnees.developper }}<br/>
+                            <em>{{ 'detail.inadequat'|trans }}: </em>{{ donnees.inadequat }}<br/>
+                            <em>{{ 'detail.fiabilite'|trans }}: </em>{{ donnees.fiabilite }}%<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="infos">
             <div class="row">
                 <div class="col-xs-2">
-                    <button class="structure">
+                    <button class="bouton-description" id="bouton-description_{{ loop.index }}" onclick="afficheDescription({{ loop.index }})">
                        <span class="glyphicon glyphicon-info-sign"></span>
                     </button>
                 </div>
                 <div class="col-xs-2">
-                    <button class="type">
+                    <button class="bouton-liste" id="bouton-liste_{{ loop.index }}" onclick="afficheListe({{ loop.index }})">
                         <span class="glyphicon glyphicon-list"></span>
                     </button>
                 </div>
                 <div class="col-xs-2">
-                    <button class="niveau">
+                    <button class="bouton-details" id="bouton-details_{{ loop.index }}" onclick="afficheDetails({{ loop.index }})">
                         <span class="glyphicon glyphicon-cog"></span>
                     </button>
                 </div>

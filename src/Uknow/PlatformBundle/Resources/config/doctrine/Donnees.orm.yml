@@ -11,42 +11,34 @@ Uknow\PlatformBundle\Entity\Donnees:
     fields:
         structure:
             type: string
-            length: 15
-            nullable: true
+            length: 12
         titre:
             type: string
-            length: 255
-            nullable: true
+            length: 40
+        description:
+            type: string
+            length: 160
         texte:
             type: text
-            nullable: true
         correction:
             type: text
             nullable: true
         date:
             type: datetime
-            nullable: true
         pertinent:
             type: integer
-            nullable: true
         developper:
             type: integer
-            nullable: true
         inadequat:
             type: integer
-            nullable: true
         type:
             type: string
-            length: 255
-            nullable: true
+            length: 13
         niveau:
             type: string
-            length: 255
-            nullable: true
+            length: 10
         fiabilite:
             type: integer
-            nullable: true
         temps:
             type: integer
-            nullable: true
     lifecycleCallbacks: {  }

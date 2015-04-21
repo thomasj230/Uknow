@@ -28,3 +28,18 @@ level:
     14: Bac + 7
     15: Bac + 8
 
+structure:
+    domain: Domaine
+    subject: Matière
+    theme: Thème
+    chapter: Chapitre
+    type: Type
+    level: Niveau
+
+detail:
+    pertinent: Pertinence
+    developper: A développer
+    inadequat: Inadequate
+    time: Temps
+    date: Date
+    fiabilite: Fiabilité

@@ -24,7 +24,6 @@
 }
 
 .etiquette .titre {
-    height: 170px;
     text-align: center;
     padding: 0 15px;
 }
@@ -48,10 +47,38 @@
     color: #555;
 }
 
-.etiquette .description
+.etiquette .description,
+.etiquette .liste,
+.etiquette .details
+{
+    padding: 10px;
+}
+
+.etiquette .titre,
+.etiquette .description,
+.etiquette .liste,
+.etiquette .details
 {
     height: 170px;
-    display: none;
+    transition-property: color, background-color;
+    transition-duration: 300ms;
+    -moz-transition-property: color, background-color;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-property: color, background-color;
+    -webkit-transition-duration: 300ms;
+    -o-transition-property: color, background-color;
+    -o-transition-duration: 300ms;
+}
+
+.etiquette .titre:hover,
+.etiquette .description:hover,
+.etiquette .liste:hover,
+.etiquette .details:hover
+{
+    cursor: pointer;
+    background-color: #CECECE;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .etiquette .infos .row
@@ -70,9 +97,9 @@
     padding: 0;
 }
 
-.etiquette .infos .type,
-.etiquette .infos .niveau,
-.etiquette .infos .structure
+.etiquette .infos .bouton-liste,
+.etiquette .infos .bouton-details,
+.etiquette .infos .bouton-description
 {
     padding:10px 0;
     line-height: 19px;
@@ -94,14 +121,15 @@
     -o-transition-duration: 300ms;
 }
 
-.etiquette .infos .structure
+.etiquette .infos .bouton-description
 {
     border-bottom-left-radius: 10px;
 }
 
-.etiquette .infos .type:hover,
-.etiquette .infos .niveau:hover,
-.etiquette .infos .structure:hover
+.etiquette .infos .active,
+.etiquette .infos .bouton-liste:hover,
+.etiquette .infos .bouton-details:hover,
+.etiquette .infos .bouton-description:hover
 {
     color: #555;
     background-color: #FFFFFF;

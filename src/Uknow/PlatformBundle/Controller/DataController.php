@@ -19,6 +19,9 @@ class DataController extends Controller{
             ->getRepository('UknowPlatformBundle:Donnees')
             ->findAll();
 
+        $serviceStructure = $this->container->get('uknow_platform.liste');
+        $listDonnees = $serviceStructure->structure($listDonnees);
+
         return $this->render('UknowPlatformBundle:data:cours.html.twig', array(
             'listDonnees' => $listDonnees,
         ));

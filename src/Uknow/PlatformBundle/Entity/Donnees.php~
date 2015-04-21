@@ -81,7 +81,7 @@ class Donnees
     /**
      * @var string
      *
-     * @ORM\Column(name="type", type="string", length=13)
+     * @ORM\Column(name="type", type="string", length=10)
      */
     private $type;
 
@@ -109,11 +109,9 @@ class Donnees
     /**
      * @var string
      *
-     * @ORM\Column(name="niveau", type="string", length=160)
+     * @ORM\Column(name="niveau", type="string", length=120)
      */
     private $description;
-
-    private $domain, $subject, $theme, $chapter;
 
     public function __construct(){
         $this->date = new \DateTime();
@@ -122,6 +120,7 @@ class Donnees
         $this->inutile = 0;
         $this->fiabilite = 0;
     }
+    
 
     /**
      * Get id
@@ -430,49 +429,5 @@ class Donnees
     public function getDescription()
     {
         return $this->description;
-    }
-
-    public function setDomain($domain)
-    {
-        $this->domain = $domain;
-        return $this;
-    }
-
-    public function getDomain()
-    {
-        return $this->domain;
-    }
-
-    public function setSubject($subject)
-    {
-        $this->subject = $subject;
-        return $this;
-    }
-
-    public function getSubject()
-    {
-        return $this->subject;
-    }
-
-    public function setTheme($theme)
-    {
-        $this->theme = $theme;
-        return $this;
-    }
-
-    public function getTheme()
-    {
-        return $this->theme;
-    }
-
-    public function setChapter($chapter)
-    {
-        $this->chapter = $chapter;
-        return $this;
-    }
-
-    public function getChapter()
-    {
-        return $this->chapter;
     }
 }
