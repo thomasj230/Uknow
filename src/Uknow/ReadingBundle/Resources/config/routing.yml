@@ -1,5 +1,5 @@
 uknow_reading_homepage:
     path:     /reading/{id}
-    defaults: { _controller: UknowPlatformBundle:Reading:lecture, id: null }
+    defaults: { _controller: UknowReadingBundle:Reading:lecture, id: null }
     requirements:
             id: \d+

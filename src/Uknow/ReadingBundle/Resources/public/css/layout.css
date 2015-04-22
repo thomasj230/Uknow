@@ -9,17 +9,74 @@ html, body
     background-color: #E6E6E6;
 }
 
-@media (min-width: 768px) {
+.container-fluid
+{
+    height: 100%;
+}
+
+.fond_header_base
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #133175
+}
+
+.fond_header_infos
+{
+    width: 100%;
+    top: 50px;
+    height: 80px;
+    position: absolute;
+    background-color: #3B5798
+}
+
+.fond_header_onglets
+{
+    width: 100%;
+    height: 30px;
+    top: 130px;
+    position: absolute;
+    background-color: #CECECE
+}
+
+@media all and (min-width: 240px){
+    .container-fluid {
+        width: 230px;
+    }
+}
+
+@media all and (min-width: 320px){
+    .container-fluid {
+        width: 300px;
+    }
+}
+
+@media all and (min-width: 480px){
+    .container-fluid {
+        width: 460px;
+    }
+}
+
+@media all and (min-width: 620px){
+    .container-fluid {
+        width: 600px;
+    }
+}
+
+@media all and (min-width: 768px){
     .container-fluid {
         width: 750px;
     }
 }
-@media (min-width: 992px) {
+
+@media all and (min-width: 992px) {
     .container-fluid {
         width: 970px;
     }
 }
-@media (min-width: 1200px) {
+
+@media all and (min-width: 1200px) {
     .container-fluid {
         width: 1170px;
     }

@@ -5,9 +5,11 @@
     <head>
         <meta charset="utf-8" />
         {% stylesheets
-        '@bootstrap_css'
-        '@UknowPlatformBundle/Resources/public/css/reading/layout.css'
-        '@UknowPlatformBundle/Resources/public/css/reading/header.css'
+            '@bootstrap_css'
+            '@UknowReadingBundle/Resources/public/css/layout.css'
+            '@UknowReadingBundle/Resources/public/css/header_base.css'
+            '@UknowReadingBundle/Resources/public/css/header_infos.css'
+            '@UknowReadingBundle/Resources/public/css/header_onglets.css'
         %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
         {% endstylesheets %}
@@ -16,27 +18,39 @@
         <title>{% block title %}Uknow{% endblock %}</title>
     </head>
     <body>
-        <div style="width: 100%; height: 50px; position: absolute; background-color: #133175"></div>
-        <div class="container-fluid" style="height: 100%;">
-            <header class="row">
-                <div class="col-xs-offset-1 col-xs-2">
-                    {{ include('UknowPlatformBundle:reading/header:title.html.twig') }}
+        <div class="fond_header_base"></div>
+        <div class="fond_header_infos"></div>
+        <div class="fond_header_onglets"></div>
+        <div class="container-fluid">
+            <header>
+                <div class="row" id="header_base">
+                    <div class="col-xs-offset-1 col-xs-2">
+                        {{ include('UknowReadingBundle:header:title.html.twig') }}
+                    </div>
+                    <nav class="col-xs-offset-1 col-xs-4">
+                        {{ render(controller('UknowReadingBundle:Reading:nav')) }}
+                    </nav>
+                    {{ render(controller('UknowReadingBundle:Reading:profil')) }}
                 </div>
-                <nav class="col-xs-offset-1 col-xs-4">
-                    {{ render(controller('UknowPlatformBundle:Reading:nav')) }}
-                </nav>
-                <div class="col-xs-offset-1 col-xs-3">
-                    {{ render(controller('UknowPlatformBundle:Reading:profil')) }}
+                <div class="row" id="header_infos">
+
+                </div>
+                <div class="row" id="header_onglets">
+
                 </div>
             </header>
+            <section>
 
+            </section>
+            <footer class=row">
 
+            </footer>
         </div>
 
         {% javascripts
-        '@jquery'
-        '@bootstrap_js'
-        '@UknowPlatformBundle/Resources/public/js/reading/header.js'
+            '@jquery'
+            '@bootstrap_js'
+            '@UknowReadingBundle/Resources/public/js/header.js'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}

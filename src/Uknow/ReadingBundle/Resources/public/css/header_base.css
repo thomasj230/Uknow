@@ -1,6 +1,5 @@
-header
+#header_base
 {
-    background-color: #133175;
     height: 50px;
     line-height: 50px;
 }
@@ -99,11 +98,43 @@ header .col-xs-3,
     background-color: #20418E;
 }
 
-.profil,
-.profil a
+.profil button
 {
     color: #FFFFFF;
+    font-size: 1.5em;
     text-decoration: none;
+}
+
+.profil .dropdown button
+{
+    font-size: 1.2em;
+}
+
+.profil .glyphicon-triangle-bottom
+{
+    font-size: 0.7em;
+    float: right;
+    top: 18px;
+    right: 10px;
+}
+
+.dropdown{
+    height: 50px;
+}
+
+.dropdown-menu
+{
+    padding: 0;
+    margin: 0;
+    background-color: #20418E;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+.dropdown-menu .li .a
+{
+    color: #FFFFFF;
 }
 
 

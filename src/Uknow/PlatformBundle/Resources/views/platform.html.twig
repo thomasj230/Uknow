@@ -5,11 +5,11 @@
     <head>
         <meta charset="utf-8" />
         {% stylesheets
-        '@bootstrap_css'
-        '@UknowPlatformBundle/Resources/public/css/header.css'
-        '@UknowPlatformBundle/Resources/public/css/layout.css'
-        '@UknowPlatformBundle/Resources/public/css/board.css'
-        '@UknowPlatformBundle/Resources/public/css/donnees.css'
+            '@bootstrap_css'
+            '@UknowPlatformBundle/Resources/public/css/header.css'
+            '@UknowPlatformBundle/Resources/public/css/layout.css'
+            '@UknowPlatformBundle/Resources/public/css/board.css'
+            '@UknowPlatformBundle/Resources/public/css/donnees.css'
         %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
         {% endstylesheets %}
@@ -26,9 +26,7 @@
                 <nav class="col-xs-offset-1 col-xs-4">
                     {{ render(controller('UknowPlatformBundle:Home:nav')) }}
                 </nav>
-                <div class="col-xs-offset-1 col-xs-3">
-                    {{ render(controller('UknowPlatformBundle:Home:profil')) }}
-                </div>
+                {{ render(controller('UknowPlatformBundle:Home:profil')) }}
             </header>
 
             <div class="row" style="margin-top:50px; height: calc(100% - 50px)">
@@ -59,12 +57,12 @@
         </div>
 
         {% javascripts
-        '@jquery'
-        '@bootstrap_js'
-        '@UknowPlatformBundle/Resources/public/js/header.js'
-        '@UknowPlatformBundle/Resources/public/js/board_animation.js'
-        '@UknowPlatformBundle/Resources/public/js/board_control.js'
-        '@UknowPlatformBundle/Resources/public/js/donnees.js'
+            '@jquery'
+            '@bootstrap_js'
+            '@UknowPlatformBundle/Resources/public/js/header.js'
+            '@UknowPlatformBundle/Resources/public/js/board_animation.js'
+            '@UknowPlatformBundle/Resources/public/js/board_control.js'
+            '@UknowPlatformBundle/Resources/public/js/donnees.js'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}

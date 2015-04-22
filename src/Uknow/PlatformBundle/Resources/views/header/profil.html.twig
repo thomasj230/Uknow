@@ -1,12 +1,23 @@
 <div class="profil">
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-    Connecté en tant que {{ app.user.username }} - <a href="{{ path('fos_user_security_logout') }}">Déconnexion</a>
-{% else %}
-    <div class="col-xs-6">
-        <button data-toggle="modal" data-backdrop="true" data-target="#Connexion">Connexion</button>
-    </div>
-    <div class="col-xs-6">
-        <button data-toggle="modal" data-backdrop="true" data-target="#Inscription">Inscription</button>
-    </div>
-{% endif %}
+        <div class="col-xs-offset-1 col-xs-2">
+            <div class="dropdown">
+                <button type="button" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span> {{ app.user.username }}<span class="glyphicon glyphicon-triangle-bottom"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+    {% else %}
+        <div class="col-xs-offset-1 col-xs-3">
+            <div class="col-xs-6">
+                <button data-toggle="modal" data-backdrop="true" data-target="#Connexion">Connexion</button>
+            </div>
+            <div class="col-xs-6">
+                <button data-toggle="modal" data-backdrop="true" data-target="#Inscription">Inscription</button>
+            </div>
+        </div>
+    {% endif %}
 </div>
