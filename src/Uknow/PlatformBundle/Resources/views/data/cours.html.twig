@@ -5,7 +5,7 @@
         <div id="carousel_{{ loop.index }}" class="carousel slide">
             <div class="carousel-inner">
                 <div class="item active">
-                    <a href="{{ path('uknow_platform_lecture', {'id': donnees.id }) }}" style="text-decoration: none">
+                    <a href="{{ path('uknow_reading_homepage', {'id': donnees.id }) }}" style="text-decoration: none">
                         <div class="titre">
                             <div class="barre"></div>
                             <div class="titre-centrer">{{ donnees.titre }}</div>
@@ -19,10 +19,10 @@
                 </div>
                 <div class="item">
                     <div class="liste" onclick="afficheTitre({{ loop.index }})">
-                        <p><em>{{ 'structure.domain'|trans }}: </em>{{ include('UknowPlatformBundle:home/data/structureTrans:domain.html.twig') }}<br/>
-                            <em>{{ 'structure.subject'|trans }}: </em>{{ include('UknowPlatformBundle:home/data/structureTrans:subject.html.twig') }}<br/>
-                            <em>{{ 'structure.theme'|trans }}: </em>{{ include('UknowPlatformBundle:home/data/structureTrans:theme.html.twig') }}<br/>
-                            <em>{{ 'structure.chapter'|trans }}: </em>{{ include('UknowPlatformBundle:home/data/structureTrans:chapter.html.twig') }}<br/>
+                        <p><em>{{ 'structure.domain'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:domain.html.twig') }}<br/>
+                            <em>{{ 'structure.subject'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:subject.html.twig') }}<br/>
+                            <em>{{ 'structure.theme'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:theme.html.twig') }}<br/>
+                            <em>{{ 'structure.chapter'|trans }}: </em>{{ include('UknowPlatformBundle:data/structureTrans:chapter.html.twig') }}<br/>
                             <em>{{ 'structure.type'|trans }}: </em>{{ donnees.type|trans }}<br/>
                             <em>{{ 'structure.level'|trans }}: </em>{{ donnees.niveau|trans }}<br/>
                         </p>

@@ -1,3 +1,7 @@
+uknow_reading:
+    resource: "@UknowReadingBundle/Resources/config/routing.yml"
+    prefix:   /
+
 uknow_evolution:
     resource: "@UknowEvolutionBundle/Resources/config/routing.yml"
     prefix:   /

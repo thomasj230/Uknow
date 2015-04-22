@@ -1,9 +1,3 @@
 uknow_platform_homepage:
     path:     /
     defaults: { _controller: UknowPlatformBundle:Home:home }
-
-uknow_platform_lecture:
-    path:     /reading/{id}
-    defaults: { _controller: UknowPlatformBundle:Reading:lecture, id: null }
-    requirements:
-            id: \d+

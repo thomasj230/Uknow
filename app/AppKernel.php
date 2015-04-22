@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Uknow\EvolutionBundle\UknowEvolutionBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Uknow\ReadingBundle\UknowReadingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
