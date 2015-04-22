@@ -1,0 +1,17 @@
+{% for donnees in listDonnees %}
+    {% if donnees.id == id %}
+        <div class="onglet actif">
+            <span data-toggle="tooltip" data-placement="bottom" title="{{ donnees.titre }}" class="reading-onglet-texte">{{ donnees.titre }}</span>
+            <button class="bouton-onglet" onclick="suppressionOnglet({{ loop.index }})">
+                <span class="glyphicon glyphicon-remove-circle"></span>
+            </button>
+        </div>
+    {% else %}
+        <div class="onglet">
+            <span class="reading-onglet-texte">{{ donnees.titre }}</span>
+            <button class="bouton-onglet" onclick="suppressionOnglet({{ loop.index }})">
+                <span class="glyphicon glyphicon-remove-circle"></span>
+            </button>
+        </div>
+    {% endif %}
+{% endfor %}

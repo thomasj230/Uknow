@@ -5,7 +5,7 @@
         {% for donnees in listDonnees %}
             {% if donnees.id == id %}
                 <div class="item active">
-                    <div class="col-xs-offset-1 col-xs-5">
+                    <div class="col-xs-6">
                         <em>{{ 'structure.domain'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:domain.html.twig') }}<br/>
                         <em>{{ 'structure.subject'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:subject.html.twig') }}<br/>
                         <em>{{ 'structure.theme'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:theme.html.twig') }}<br/>
@@ -26,7 +26,7 @@
                 </div>
             {% else %}
                 <div class="item">
-                    <div class="col-xs-offset-1 col-xs-5">
+                    <div class="col-xs-6">
                         <em>{{ 'structure.domain'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:domain.html.twig') }}<br/>
                         <em>{{ 'structure.subject'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:subject.html.twig') }}<br/>
                         <em>{{ 'structure.theme'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:theme.html.twig') }}<br/>

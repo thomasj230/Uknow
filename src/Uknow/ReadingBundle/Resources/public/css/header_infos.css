@@ -4,4 +4,7 @@
     width: 100%;
     color: #FFFFFF;
     padding: 10px;
+    z-index: 100;
+    margin: 0;
+    position: relative;
 }

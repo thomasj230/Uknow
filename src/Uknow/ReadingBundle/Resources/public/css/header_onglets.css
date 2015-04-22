@@ -1,5 +1,37 @@
 #header_onglets
 {
     height: 30px;
-    line-height: 30px;
+    line-height: 28px;
+    width: 100%;
+    background-color: #CECECE;
+    border: 1px solid #555;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    position: relative;
+    margin: 0;
+    z-index: 100;
+}
+
+#header_onglets .onglet
+{
+    border: 1px solid #555;
+    border-top-style: hidden;
+    width: 160px;
+    height: 29px;
+    padding: 0 5px;
+}
+
+#header_onglets .actif
+{
+    border-bottom-style: hidden;
+    background-color: #E6E6E6;
+    line-height: 29px;
+}
+
+#header_onglets .bouton-onglet
+{
+    border: 0;
+    background-color: transparent;
+    float: right;
+    outline: none;
 }

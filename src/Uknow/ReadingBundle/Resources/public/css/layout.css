@@ -19,7 +19,8 @@ html, body
     width: 100%;
     height: 50px;
     position: absolute;
-    background-color: #133175
+    background-color: #133175;
+    z-index: 0;
 }
 
 .fond_header_infos
@@ -29,6 +30,7 @@ html, body
     height: 100px;
     position: absolute;
     background-color: #3B5798;
+    z-index: 0;
 }
 
 .fond_header_onglets
@@ -37,7 +39,11 @@ html, body
     height: 30px;
     top: 150px;
     position: absolute;
-    background-color: #CECECE
+    background-color: #CECECE;
+    border: 1px solid #555;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    z-index: 0;
 }
 
 @media all and (min-width: 240px){
