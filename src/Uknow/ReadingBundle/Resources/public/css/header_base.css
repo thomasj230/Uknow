@@ -42,20 +42,21 @@ header .col-xs-3,
 .nav .menu-briefcase-down,
 .nav .menu-education-down
 {
-    width: calc(11.11111111% - 10px);
+    width: 120px;
     display: none;
-    background-color: #3B5798;
+    background-color: #20418E;
     position: fixed;
     padding: 10px;
     font-size: 0.8em;
     list-style-type: none;
+    z-index: 100;
 }
 
 .nav .menu-pencil:hover,
 .nav .menu-briefcase:hover,
 .nav .menu-education:hover
 {
-    background-color: #3B5798;
+    background-color: #20418E;
 }
 
 .nav .dropdown-menu
@@ -90,6 +91,11 @@ header .col-xs-3,
     -webkit-transition-duration: 400ms;
     -o-transition-property: background-color;
     -o-transition-duration: 400ms;
+}
+
+.profil .col-xs-6
+{
+    height: 50px;
 }
 
 .title:hover,

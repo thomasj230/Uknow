@@ -1,0 +1,51 @@
+{% trans_default_domain 'PlatformeBundle' %}
+
+<div id="carousel" class="carousel slide">
+    <div class="carousel-inner">
+        {% for donnees in listDonnees %}
+            {% if donnees.id == id %}
+                <div class="item active">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        <em>{{ 'structure.domain'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:domain.html.twig') }}<br/>
+                        <em>{{ 'structure.subject'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:subject.html.twig') }}<br/>
+                        <em>{{ 'structure.theme'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:theme.html.twig') }}<br/>
+                        <em>{{ 'structure.chapter'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:chapter.html.twig') }}<br/>
+                    </div>
+                    <div class="col-xs-3">
+                        <em>{{ 'structure.type'|trans }}: </em>{{ donnees.type|trans }}<br/>
+                        <em>{{ 'structure.level'|trans }}: </em>{{ donnees.niveau|trans }}<br/>
+                        <em>{{ 'detail.date'|trans }}: </em>{{ donnees.date|date('d/m/Y') }}<br/>
+                        <em>{{ 'detail.time'|trans }}: </em>{{ donnees.temps }}<br/>
+                    </div>
+                    <div class="col-xs-3">
+                        <em>{{ 'detail.pertinent'|trans }}: </em>{{ donnees.pertinent }}<br/>
+                        <em>{{ 'detail.developper'|trans }}: </em>{{ donnees.developper }}<br/>
+                        <em>{{ 'detail.inadequat'|trans }}: </em>{{ donnees.inadequat }}<br/>
+                        <em>{{ 'detail.fiabilite'|trans }}: </em>{{ donnees.fiabilite }}%<br/>
+                    </div>
+                </div>
+            {% else %}
+                <div class="item">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        <em>{{ 'structure.domain'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:domain.html.twig') }}<br/>
+                        <em>{{ 'structure.subject'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:subject.html.twig') }}<br/>
+                        <em>{{ 'structure.theme'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:theme.html.twig') }}<br/>
+                        <em>{{ 'structure.chapter'|trans }}: </em>{{ include('UknowReadingBundle:header/structureTrans:chapter.html.twig') }}<br/>
+                    </div>
+                    <div class="col-xs-3">
+                        <em>{{ 'structure.type'|trans }}: </em>{{ donnees.type|trans }}<br/>
+                        <em>{{ 'structure.level'|trans }}: </em>{{ donnees.niveau|trans }}<br/>
+                        <em>{{ 'detail.date'|trans }}: </em>{{ donnees.date|date('d/m/Y') }}<br/>
+                        <em>{{ 'detail.time'|trans }}: </em>{{ donnees.temps }}<br/>
+                    </div>
+                    <div class="col-xs-3">
+                        <em>{{ 'detail.pertinent'|trans }}: </em>{{ donnees.pertinent }}<br/>
+                        <em>{{ 'detail.developper'|trans }}: </em>{{ donnees.developper }}<br/>
+                        <em>{{ 'detail.inadequat'|trans }}: </em>{{ donnees.inadequat }}<br/>
+                        <em>{{ 'detail.fiabilite'|trans }}: </em>{{ donnees.fiabilite }}%<br/>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

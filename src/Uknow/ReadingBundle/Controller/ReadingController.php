@@ -9,13 +9,40 @@
 namespace Uknow\ReadingBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 
 class ReadingController extends Controller{
 
-    public function lectureAction($id, Request $request){
+    public function lectureAction($id){
 
-        return $this->render('UknowReadingBundle::reading.html.twig');
+        $serviceListe = $this->container->get('uknow_reading.liste');
+        $em = $this->getDoctrine()->getManager();
+
+        if (null === $this->getUser()) {
+            $listReading = $id;
+        } else {
+            $compte = $this->getDoctrine()
+                ->getManager()
+                ->getRepository('UknowUtilisateurBundle:Compte')
+                ->find($this->getUser()->getId());
+            $compte->setPagesOuvertes($serviceListe->addDonneesReading($compte->getPagesOuvertes(), $id));
+            $em->persist($compte);
+            $em->flush();
+            $listReading = $compte->getPagesOuvertes();
+        }
+
+        $listDonnees = $listDonnees = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('UknowPlatformBundle:Donnees')
+            ->findAll();
+        $listDonnees = $serviceListe->listDonneesReading($listDonnees, $listReading);
+
+        $serviceStructure = $this->container->get('uknow_platform.liste');
+        $listDonnees = $serviceStructure->structure($listDonnees);
+
+        return $this->render('UknowReadingBundle::reading.html.twig', array(
+            'listDonnees' => $listDonnees,
+            'id' => $id,
+        ));
     }
 
     public function navAction()
