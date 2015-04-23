@@ -1,0 +1,54 @@
+#body_texte
+{
+    padding: 10px 20px;
+}
+
+#body_texte .texte
+{
+    margin: 0 100px;
+    height: 100%;
+}
+
+#body_texte .titre
+{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+#body_texte .bouton-carousel-right
+{
+    margin-left: 1000px;
+}
+
+#body_texte .bouton-carousel-right,
+#body_texte .bouton-carousel-left
+{
+    background-color: transparent;
+    border: none;
+    top: 180px;
+    width: 100px;
+    height: calc(100% - 180px);
+    line-height: calc(100% - 180px);
+    display: inline;
+    position: absolute;
+    outline: none;
+    font-size: 1.2em;
+    z-index: 100;
+    transition-property: font-size;
+    transition-duration: 400ms;
+    -moz-transition-property: font-size;
+    -moz-transition-duration: 400ms;
+    -webkit-transition-property: font-size;
+    -webkit-transition-duration: 400ms;
+    -o-transition-property: font-size;
+    -o-transition-duration: 400ms;
+}
+
+#body_texte .bouton-carousel-right:hover,
+#body_texte .bouton-carousel-left:hover
+{
+    font-size: 2.5em;
+}

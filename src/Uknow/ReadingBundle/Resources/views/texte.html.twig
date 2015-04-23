@@ -1,0 +1,25 @@
+<button class="bouton-carousel-left" onclick="carouselLeft()">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+</button>
+
+<div id="carousel" class="carousel slide">
+    <div class="carousel-inner">
+        {% for donnees in listDonnees %}
+            {% if donnees.id == id %}
+                <div class="item active">
+                    <div class="titre">{{ donnees.titre }}</div>
+                    <div class="texte">{{ donnees.texte|raw }}</div>
+                </div>
+            {% else %}
+                <div class="item">
+                    <div class="titre">{{ donnees.titre }}</div>
+                    <div class="texte">{{ donnees.texte|raw }}</div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<button class="bouton-carousel-right" onclick="carouselRight()">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</button>

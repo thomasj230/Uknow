@@ -10,11 +10,13 @@
             '@UknowReadingBundle/Resources/public/css/header_base.css'
             '@UknowReadingBundle/Resources/public/css/header_infos.css'
             '@UknowReadingBundle/Resources/public/css/header_onglets.css'
+            '@UknowReadingBundle/Resources/public/css/texte.css'
         %}
         <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
         {% endstylesheets %}
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=greek' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+        <link rel="SHORTCUT ICON" href="{{ asset('images/logo.ico') }}">
         <title>{% block title %}Uknow{% endblock %}</title>
     </head>
     <body>
@@ -39,8 +41,8 @@
                     {{ include('UknowReadingBundle:header:onglets.html.twig') }}
                 </div>
             </header>
-            <section>
-
+            <section id="body_texte">
+                {{ include('UknowReadingBundle::texte.html.twig') }}
             </section>
             <footer class=row">
 

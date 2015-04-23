@@ -9,7 +9,7 @@
     border-right-style: hidden;
     position: relative;
     margin: 0;
-    z-index: 100;
+    z-index: 50;
 }
 
 #header_onglets .onglet
@@ -19,6 +19,14 @@
     width: 160px;
     height: 29px;
     padding: 0 5px;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: -0.34em;
+}
+
+#header_onglets .onglet:hover
+{
+    cursor:pointer;
 }
 
 #header_onglets .actif
