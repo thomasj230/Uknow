@@ -17,6 +17,7 @@ $(function(){
 
 function carouselLeft(){
     $('.carousel').carousel('prev').carousel('pause');
+    $('.carousel').carousel('prev').carousel('pause');
 }
 
 function carouselRight(){

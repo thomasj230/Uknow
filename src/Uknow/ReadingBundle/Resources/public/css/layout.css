@@ -86,4 +86,10 @@ html, body
     .container-fluid {
         width: 1170px;
     }
+
+    header
+    {
+        width: 970px;
+        margin: auto;
+    }
 }
